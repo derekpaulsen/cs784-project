@@ -7,12 +7,10 @@ sudo apt-get install openssh-server openssh-client -y
 # spark
 wget https://www.apache.org/dyn/closer.lua/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
 tar xvf spark-2.4.0-bin-hadoop2.7.tgz
-mv spark-2.4.0-bin-hadoop2.7 /usr/local/spark
 
 # hdfs 
 wget http://apache.claz.org/hadoop/common/hadoop-3.2.0/hadoop-3.2.0.tar.gz
 tar xvf hadoop-3.2.0.tar.gz
-mv hadoop-3.2.0.tar.gz /usr/local/hadoop
 
 
 
