@@ -1,4 +1,7 @@
 #install all the stuff for each node 
+sudo apt update -y
+sudo apt upgrade -y
+
 
 sudo apt install java-common -y
 sudo apt install scala -y
