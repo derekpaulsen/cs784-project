@@ -16,4 +16,9 @@ sudo apt install vim tmux htop ipython3 python3-pip -y
 
 pip3 install pandas numpy scipy
 
+#format and mount the disk
+sudo mkfs.ext4 /dev/sda4
+sudo mkdir -p /data
+sudo mount /dev/sda4 /data
+sudo chown dpaulsen /data
 
