@@ -12,7 +12,7 @@ sudo apt install oracle-java8-installer
 sudo apt install scala -y
 sudo apt install openssh-server openssh-client -y 
 #utilities
-sudo apt install vim tmux htop ipython3 python3-pip -y
+sudo apt install vim tmux htop ipython3 python3-pip pixz-y
 
 pip3 install pandas numpy scipy
 
