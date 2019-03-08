@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export SPARK_MASTER_HOST="10.10.1.1"
 export JAVA_HOME="/usr/"
 
 #
