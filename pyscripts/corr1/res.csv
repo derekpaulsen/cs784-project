@@ -1,0 +1,241 @@
+bnf_sec,imd_cat,prescribe_col,corr
+Gastro-Intestinal System,crime,items,-0.3405188276301066
+Gastro-Intestinal System,crime,quantity,-0.3180635828023336
+Gastro-Intestinal System,crime,act_cost,-0.31920095938404147
+Gastro-Intestinal System,crime,net_ingredient_cost,-0.31941726327797426
+Gastro-Intestinal System,education,items,-0.10460143367944205
+Gastro-Intestinal System,education,quantity,-0.09286800845197968
+Gastro-Intestinal System,education,act_cost,-0.13642986339164806
+Gastro-Intestinal System,education,net_ingredient_cost,-0.13676065581342006
+Gastro-Intestinal System,housing,items,0.11882626880021567
+Gastro-Intestinal System,housing,quantity,0.10044097115904428
+Gastro-Intestinal System,housing,act_cost,0.09365234550343528
+Gastro-Intestinal System,housing,net_ingredient_cost,0.09417821068417319
+Gastro-Intestinal System,income,items,-0.18013150003358674
+Gastro-Intestinal System,income,quantity,-0.16918212435536606
+Gastro-Intestinal System,income,act_cost,-0.20073965099531307
+Gastro-Intestinal System,income,net_ingredient_cost,-0.20120639340041496
+Gastro-Intestinal System,health,items,-0.12077110370708562
+Gastro-Intestinal System,health,quantity,-0.11325488113710137
+Gastro-Intestinal System,health,act_cost,-0.15749584916525886
+Gastro-Intestinal System,health,net_ingredient_cost,-0.15813551677687462
+Gastro-Intestinal System,IMD,items,-0.1228154287542685
+Gastro-Intestinal System,IMD,quantity,-0.11309373238370532
+Gastro-Intestinal System,IMD,act_cost,-0.15476471957703614
+Gastro-Intestinal System,IMD,net_ingredient_cost,-0.1551644725492554
+Gastro-Intestinal System,children,items,-0.18024180133994844
+Gastro-Intestinal System,children,quantity,-0.17049093394769116
+Gastro-Intestinal System,children,act_cost,-0.1999325551977318
+Gastro-Intestinal System,children,net_ingredient_cost,-0.20043606837117248
+Gastro-Intestinal System,employment,items,-0.11624836178368528
+Gastro-Intestinal System,employment,quantity,-0.10755699514109891
+Gastro-Intestinal System,employment,act_cost,-0.15171625199095418
+Gastro-Intestinal System,employment,net_ingredient_cost,-0.15233189695116287
+Gastro-Intestinal System,environment,items,-0.025904093183848117
+Gastro-Intestinal System,environment,quantity,-0.008209190594524185
+Gastro-Intestinal System,environment,act_cost,-0.04011117569090041
+Gastro-Intestinal System,environment,net_ingredient_cost,-0.03998679250770367
+Gastro-Intestinal System,living,items,0.10106079724381258
+Gastro-Intestinal System,living,quantity,0.10833034096856894
+Gastro-Intestinal System,living,act_cost,0.07747011979615577
+Gastro-Intestinal System,living,net_ingredient_cost,0.0778054857433159
+Cardiovascular System,crime,items,-0.3644183797744573
+Cardiovascular System,crime,quantity,-0.3570601298869649
+Cardiovascular System,crime,act_cost,-0.330216320650295
+Cardiovascular System,crime,net_ingredient_cost,-0.33033712267198434
+Cardiovascular System,education,items,-0.1232722735900281
+Cardiovascular System,education,quantity,-0.14941180611487906
+Cardiovascular System,education,act_cost,-0.1489425765907167
+Cardiovascular System,education,net_ingredient_cost,-0.14909843464302916
+Cardiovascular System,housing,items,0.11553636761968918
+Cardiovascular System,housing,quantity,0.08301079236355347
+Cardiovascular System,housing,act_cost,0.09477991643418436
+Cardiovascular System,housing,net_ingredient_cost,0.09533968401269194
+Cardiovascular System,income,items,-0.2091476682098784
+Cardiovascular System,income,quantity,-0.23263405086244276
+Cardiovascular System,income,act_cost,-0.21447596572578892
+Cardiovascular System,income,net_ingredient_cost,-0.21484505673467147
+Cardiovascular System,health,items,-0.1540873502800177
+Cardiovascular System,health,quantity,-0.19069727028482455
+Cardiovascular System,health,act_cost,-0.17986978005542156
+Cardiovascular System,health,net_ingredient_cost,-0.1803916795962459
+Cardiovascular System,IMD,items,-0.1535500811660789
+Cardiovascular System,IMD,quantity,-0.1876333962208679
+Cardiovascular System,IMD,act_cost,-0.17353979678871315
+Cardiovascular System,IMD,net_ingredient_cost,-0.1738027434250217
+Cardiovascular System,children,items,-0.2076762528194015
+Cardiovascular System,children,quantity,-0.23175991800660983
+Cardiovascular System,children,act_cost,-0.21699919406305304
+Cardiovascular System,children,net_ingredient_cost,-0.2174512278802619
+Cardiovascular System,employment,items,-0.14466941874096603
+Cardiovascular System,employment,quantity,-0.17800184445446074
+Cardiovascular System,employment,act_cost,-0.16928739907493112
+Cardiovascular System,employment,net_ingredient_cost,-0.16978420622381055
+Cardiovascular System,environment,items,-0.05361545791434806
+Cardiovascular System,environment,quantity,-0.06834101855523908
+Cardiovascular System,environment,act_cost,-0.04656083304115941
+Cardiovascular System,environment,net_ingredient_cost,-0.04631861904184176
+Cardiovascular System,living,items,0.07350111387018478
+Cardiovascular System,living,quantity,0.047685992796799796
+Cardiovascular System,living,act_cost,0.0639632804136055
+Cardiovascular System,living,net_ingredient_cost,0.06440883786189897
+Respiratory System,crime,items,-0.2863875051403487
+Respiratory System,crime,quantity,-0.2372336302707505
+Respiratory System,crime,act_cost,-0.29970601762606675
+Respiratory System,crime,net_ingredient_cost,-0.2997394252156748
+Respiratory System,education,items,-0.07280534843380707
+Respiratory System,education,quantity,-0.06601119538277099
+Respiratory System,education,act_cost,-0.08922587742975957
+Respiratory System,education,net_ingredient_cost,-0.08928797225400477
+Respiratory System,housing,items,0.10234095588842589
+Respiratory System,housing,quantity,0.09857382888591698
+Respiratory System,housing,act_cost,0.08085462409167339
+Respiratory System,housing,net_ingredient_cost,0.0809625624281244
+Respiratory System,income,items,-0.14220496886458237
+Respiratory System,income,quantity,-0.10060820400798157
+Respiratory System,income,act_cost,-0.16664607118202332
+Respiratory System,income,net_ingredient_cost,-0.16670549576376542
+Respiratory System,health,items,-0.09597014523076536
+Respiratory System,health,quantity,-0.07753250316494663
+Respiratory System,health,act_cost,-0.11511215810248733
+Respiratory System,health,net_ingredient_cost,-0.11519493628787426
+Respiratory System,IMD,items,-0.08891497753154254
+Respiratory System,IMD,quantity,-0.0625313077693679
+Respiratory System,IMD,act_cost,-0.11353651670711319
+Respiratory System,IMD,net_ingredient_cost,-0.1135905523337699
+Respiratory System,children,items,-0.1385521575560971
+Respiratory System,children,quantity,-0.11053465721768628
+Respiratory System,children,act_cost,-0.15927847409967316
+Respiratory System,children,net_ingredient_cost,-0.15936262290046999
+Respiratory System,employment,items,-0.08463365908537661
+Respiratory System,employment,quantity,-0.062078466064901146
+Respiratory System,employment,act_cost,-0.10532307554116983
+Respiratory System,employment,net_ingredient_cost,-0.10540817766030607
+Respiratory System,environment,items,-0.017096918473889663
+Respiratory System,environment,quantity,0.011521508666329616
+Respiratory System,environment,act_cost,-0.03193798424165834
+Respiratory System,environment,net_ingredient_cost,-0.03189373230616634
+Respiratory System,living,items,0.09352311568703384
+Respiratory System,living,quantity,0.09392122233313772
+Respiratory System,living,act_cost,0.07936733588708171
+Respiratory System,living,net_ingredient_cost,0.07943965472126238
+Central Nervous System,crime,items,-0.2551527311534516
+Central Nervous System,crime,quantity,-0.1277139266039159
+Central Nervous System,crime,act_cost,-0.2574875401248501
+Central Nervous System,crime,net_ingredient_cost,-0.25791316250295065
+Central Nervous System,education,items,-0.06387053223635968
+Central Nervous System,education,quantity,-0.03029197695808035
+Central Nervous System,education,act_cost,-0.09790696978884396
+Central Nervous System,education,net_ingredient_cost,-0.09826014809762881
+Central Nervous System,housing,items,0.11086883484643803
+Central Nervous System,housing,quantity,0.0890294603885227
+Central Nervous System,housing,act_cost,0.10542891540371428
+Central Nervous System,housing,net_ingredient_cost,0.10537372333801615
+Central Nervous System,income,items,-0.11361105402639199
+Central Nervous System,income,quantity,-0.04447132801752428
+Central Nervous System,income,act_cost,-0.14645804504994694
+Central Nervous System,income,net_ingredient_cost,-0.14703902201993688
+Central Nervous System,health,items,-0.0657437671471997
+Central Nervous System,health,quantity,-0.017264504560674257
+Central Nervous System,health,act_cost,-0.10682223864473073
+Central Nervous System,health,net_ingredient_cost,-0.1074271040265813
+Central Nervous System,IMD,items,-0.06559879761410739
+Central Nervous System,IMD,quantity,-0.0199349555599283
+Central Nervous System,IMD,act_cost,-0.10268781214330039
+Central Nervous System,IMD,net_ingredient_cost,-0.10322263042408468
+Central Nervous System,children,items,-0.1093704412143193
+Central Nervous System,children,quantity,-0.03998843150968211
+Central Nervous System,children,act_cost,-0.14553477204049373
+Central Nervous System,children,net_ingredient_cost,-0.14617427272999955
+Central Nervous System,employment,items,-0.06537274028614587
+Central Nervous System,employment,quantity,-0.024696863336426112
+Central Nervous System,employment,act_cost,-0.1068215255498588
+Central Nervous System,employment,net_ingredient_cost,-0.10737529263024698
+Central Nervous System,environment,items,-0.00201835892614506
+Central Nervous System,environment,quantity,-0.001448650251946201
+Central Nervous System,environment,act_cost,-0.009900522257992105
+Central Nervous System,environment,net_ingredient_cost,-0.009946990089600687
+Central Nervous System,living,items,0.1076544012361735
+Central Nervous System,living,quantity,0.0649924468900236
+Central Nervous System,living,act_cost,0.10035833473678299
+Central Nervous System,living,net_ingredient_cost,0.10037140967689216
+Infections,crime,items,-0.2478117690529859
+Infections,crime,quantity,-0.22583360082981968
+Infections,crime,act_cost,-0.1754272068604615
+Infections,crime,net_ingredient_cost,-0.17521356337461558
+Infections,education,items,-0.10422297783079532
+Infections,education,quantity,-0.11022486263984693
+Infections,education,act_cost,-0.09618475991660817
+Infections,education,net_ingredient_cost,-0.09612792592810755
+Infections,housing,items,0.09307594634253553
+Infections,housing,quantity,0.07789004347384093
+Infections,housing,act_cost,0.0719359916168973
+Infections,housing,net_ingredient_cost,0.07217149440990167
+Infections,income,items,-0.15710690193636895
+Infections,income,quantity,-0.15413282967566333
+Infections,income,act_cost,-0.11876903509126328
+Infections,income,net_ingredient_cost,-0.11862226388324038
+Infections,health,items,-0.12696260352827624
+Infections,health,quantity,-0.1332691131442249
+Infections,health,act_cost,-0.10060576915584583
+Infections,health,net_ingredient_cost,-0.10055658888724371
+Infections,IMD,items,-0.11814750995268639
+Infections,IMD,quantity,-0.12340663868885345
+Infections,IMD,act_cost,-0.09416824619202657
+Infections,IMD,net_ingredient_cost,-0.0940343262549465
+Infections,children,items,-0.15548986019595384
+Infections,children,quantity,-0.1546186374173567
+Infections,children,act_cost,-0.11668808187280647
+Infections,children,net_ingredient_cost,-0.11655184950959671
+Infections,employment,items,-0.1233618992235955
+Infections,employment,quantity,-0.12973473223256957
+Infections,employment,act_cost,-0.1036098516932866
+Infections,employment,net_ingredient_cost,-0.10355283146949214
+Infections,environment,items,-0.025524778021809955
+Infections,environment,quantity,-0.03446580272393085
+Infections,environment,act_cost,-0.005704434861176298
+Infections,environment,net_ingredient_cost,-0.005479061130627019
+Infections,living,items,0.07388129031787216
+Infections,living,quantity,0.05297575397087382
+Infections,living,act_cost,0.06947981117943118
+Infections,living,net_ingredient_cost,0.06965177372686364
+Endocrine System,crime,items,-0.3342015303400192
+Endocrine System,crime,quantity,-0.2892657213394354
+Endocrine System,crime,act_cost,-0.24938790316935747
+Endocrine System,crime,net_ingredient_cost,-0.2492034490101849
+Endocrine System,education,items,-0.10884760578288585
+Endocrine System,education,quantity,-0.11886324268824648
+Endocrine System,education,act_cost,-0.10875952813611303
+Endocrine System,education,net_ingredient_cost,-0.10875003753235377
+Endocrine System,housing,items,0.1288738275747222
+Endocrine System,housing,quantity,0.10359898565222697
+Endocrine System,housing,act_cost,0.09971561883963248
+Endocrine System,housing,net_ingredient_cost,0.09981242485997013
+Endocrine System,income,items,-0.18399653726591647
+Endocrine System,income,quantity,-0.1732319900920915
+Endocrine System,income,act_cost,-0.156248575813167
+Endocrine System,income,net_ingredient_cost,-0.15619975084365464
+Endocrine System,health,items,-0.13893569643042672
+Endocrine System,health,quantity,-0.15119886926341006
+Endocrine System,health,act_cost,-0.13655305296740036
+Endocrine System,health,net_ingredient_cost,-0.13656379604205815
+Endocrine System,IMD,items,-0.13214977410880177
+Endocrine System,IMD,quantity,-0.13923405893315327
+Endocrine System,IMD,act_cost,-0.12272248363817244
+Endocrine System,IMD,net_ingredient_cost,-0.12268505720348268
+Endocrine System,children,items,-0.18377995830054514
+Endocrine System,children,quantity,-0.17408002064734923
+Endocrine System,children,act_cost,-0.15754055656443317
+Endocrine System,children,net_ingredient_cost,-0.15750355455500084
+Endocrine System,employment,items,-0.13139173495338552
+Endocrine System,employment,quantity,-0.1423009902440301
+Endocrine System,employment,act_cost,-0.12957773065577208
+Endocrine System,employment,net_ingredient_cost,-0.12960230010060397
+Endocrine System,environment,items,-0.02906350847045484
+Endocrine System,environment,quantity,-0.02639296044519727
+Endocrine System,environment,act_cost,-0.01354878694590614
+Endocrine System,environment,net_ingredient_cost,-0.013441154360307258
+Endocrine System,living,items,0.09573892956128377
+Endocrine System,living,quantity,0.07837912727011058
+Endocrine System,living,act_cost,0.08507556441383328
+Endocrine System,living,net_ingredient_cost,0.08516157171296056
