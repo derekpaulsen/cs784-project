@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export SPARK_MASTER_HOST="10.10.1.1"
+export SPARK_MASTER_HOST="c220g2-010609.wisc.cloudlab.us"
 export JAVA_HOME="/usr/"
 
 #
