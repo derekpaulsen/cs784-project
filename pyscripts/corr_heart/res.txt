@@ -1,0 +1,521 @@
+bnf_sec,bnf_sub_sec,imd_cat,prescribe_col,corr
+2,Positive Inotropic Drugs ,crime,items,-0.36114021730249024
+2,Positive Inotropic Drugs ,crime,quantity,-0.36485017018364846
+2,Positive Inotropic Drugs ,crime,act_cost,-0.30170337716702117
+2,Positive Inotropic Drugs ,crime,net_ingredient_cost,-0.30079393132893145
+2,Positive Inotropic Drugs ,education,items,-0.1376452324361967
+2,Positive Inotropic Drugs ,education,quantity,-0.14386162423577992
+2,Positive Inotropic Drugs ,education,act_cost,-0.12197709709284048
+2,Positive Inotropic Drugs ,education,net_ingredient_cost,-0.12138693247302662
+2,Positive Inotropic Drugs ,housing,items,0.09884435920334089
+2,Positive Inotropic Drugs ,housing,quantity,0.07196057911984474
+2,Positive Inotropic Drugs ,housing,act_cost,0.05784494576881832
+2,Positive Inotropic Drugs ,housing,net_ingredient_cost,0.05860113884994269
+2,Positive Inotropic Drugs ,income,items,-0.2242289522097441
+2,Positive Inotropic Drugs ,income,quantity,-0.24777029592222072
+2,Positive Inotropic Drugs ,income,act_cost,-0.20607153487791252
+2,Positive Inotropic Drugs ,income,net_ingredient_cost,-0.2057771820235187
+2,Positive Inotropic Drugs ,health,items,-0.17933052204751912
+2,Positive Inotropic Drugs ,health,quantity,-0.20694451777163153
+2,Positive Inotropic Drugs ,health,act_cost,-0.17253430213590815
+2,Positive Inotropic Drugs ,health,net_ingredient_cost,-0.17242265823223846
+2,Positive Inotropic Drugs ,IMD,items,-0.17544202003723172
+2,Positive Inotropic Drugs ,IMD,quantity,-0.2001526533875916
+2,Positive Inotropic Drugs ,IMD,act_cost,-0.16763559699456457
+2,Positive Inotropic Drugs ,IMD,net_ingredient_cost,-0.1671353340262698
+2,Positive Inotropic Drugs ,children,items,-0.2208404225551293
+2,Positive Inotropic Drugs ,children,quantity,-0.24559864858822425
+2,Positive Inotropic Drugs ,children,act_cost,-0.20512696731213068
+2,Positive Inotropic Drugs ,children,net_ingredient_cost,-0.20500327481744576
+2,Positive Inotropic Drugs ,employment,items,-0.16704055403636037
+2,Positive Inotropic Drugs ,employment,quantity,-0.19157083250954202
+2,Positive Inotropic Drugs ,employment,act_cost,-0.16069771505138106
+2,Positive Inotropic Drugs ,employment,net_ingredient_cost,-0.16064222804361888
+2,Positive Inotropic Drugs ,environment,items,-0.05631498200029337
+2,Positive Inotropic Drugs ,environment,quantity,-0.06961215710209422
+2,Positive Inotropic Drugs ,environment,act_cost,-0.058326918469598414
+2,Positive Inotropic Drugs ,environment,net_ingredient_cost,-0.05749618138137067
+2,Positive Inotropic Drugs ,living,items,0.05660325418987055
+2,Positive Inotropic Drugs ,living,quantity,0.04086428351686212
+2,Positive Inotropic Drugs ,living,act_cost,0.03181716029720151
+2,Positive Inotropic Drugs ,living,net_ingredient_cost,0.03275439333413367
+2,Diuretics,crime,items,-0.376571379771474
+2,Diuretics,crime,quantity,-0.37413047391624404
+2,Diuretics,crime,act_cost,-0.3562608787860984
+2,Diuretics,crime,net_ingredient_cost,-0.3569342025518863
+2,Diuretics,education,items,-0.11451903416722983
+2,Diuretics,education,quantity,-0.12919156438394758
+2,Diuretics,education,act_cost,-0.13865950012478054
+2,Diuretics,education,net_ingredient_cost,-0.13907139741659846
+2,Diuretics,housing,items,0.10647801074332137
+2,Diuretics,housing,quantity,0.07840855621206476
+2,Diuretics,housing,act_cost,0.07788922192983665
+2,Diuretics,housing,net_ingredient_cost,0.07924033365852537
+2,Diuretics,income,items,-0.21344190737248003
+2,Diuretics,income,quantity,-0.23370987604313628
+2,Diuretics,income,act_cost,-0.23248431243801565
+2,Diuretics,income,net_ingredient_cost,-0.23359405659690974
+2,Diuretics,health,items,-0.15122838948914466
+2,Diuretics,health,quantity,-0.1788043728554564
+2,Diuretics,health,act_cost,-0.18668480545680738
+2,Diuretics,health,net_ingredient_cost,-0.1880760079789254
+2,Diuretics,IMD,items,-0.15654350097314193
+2,Diuretics,IMD,quantity,-0.1828242312898797
+2,Diuretics,IMD,act_cost,-0.18459629137998038
+2,Diuretics,IMD,net_ingredient_cost,-0.18534473117072447
+2,Diuretics,children,items,-0.21268959167716828
+2,Diuretics,children,quantity,-0.23433703357743285
+2,Diuretics,children,act_cost,-0.22972800685208505
+2,Diuretics,children,net_ingredient_cost,-0.23096703476836677
+2,Diuretics,employment,items,-0.14363267443689837
+2,Diuretics,employment,quantity,-0.1683680495870583
+2,Diuretics,employment,act_cost,-0.17156238285299114
+2,Diuretics,employment,net_ingredient_cost,-0.17283314558092097
+2,Diuretics,environment,items,-0.06730510034613098
+2,Diuretics,environment,quantity,-0.07894372183943137
+2,Diuretics,environment,act_cost,-0.07969477791699045
+2,Diuretics,environment,net_ingredient_cost,-0.07930216042242137
+2,Diuretics,living,items,0.06542292722094835
+2,Diuretics,living,quantity,0.04555165550409212
+2,Diuretics,living,act_cost,0.03324102953168288
+2,Diuretics,living,net_ingredient_cost,0.034233928653222175
+2,Anti-Arrhythmic Drugs,crime,items,-0.34611170144530556
+2,Anti-Arrhythmic Drugs,crime,quantity,-0.37081488500990045
+2,Anti-Arrhythmic Drugs,crime,act_cost,-0.3031038468204075
+2,Anti-Arrhythmic Drugs,crime,net_ingredient_cost,-0.3029849354399801
+2,Anti-Arrhythmic Drugs,education,items,-0.15394821333177736
+2,Anti-Arrhythmic Drugs,education,quantity,-0.20853680902278063
+2,Anti-Arrhythmic Drugs,education,act_cost,-0.15475652831096315
+2,Anti-Arrhythmic Drugs,education,net_ingredient_cost,-0.15462808736311973
+2,Anti-Arrhythmic Drugs,housing,items,0.1071192597627214
+2,Anti-Arrhythmic Drugs,housing,quantity,0.08398101534443807
+2,Anti-Arrhythmic Drugs,housing,act_cost,0.06618445841533258
+2,Anti-Arrhythmic Drugs,housing,net_ingredient_cost,0.06649049294789576
+2,Anti-Arrhythmic Drugs,income,items,-0.2319292538084712
+2,Anti-Arrhythmic Drugs,income,quantity,-0.29525860021655687
+2,Anti-Arrhythmic Drugs,income,act_cost,-0.22307160577332494
+2,Anti-Arrhythmic Drugs,income,net_ingredient_cost,-0.2230447145876723
+2,Anti-Arrhythmic Drugs,health,items,-0.20318660803045782
+2,Anti-Arrhythmic Drugs,health,quantity,-0.28279410568448643
+2,Anti-Arrhythmic Drugs,health,act_cost,-0.20521767934126828
+2,Anti-Arrhythmic Drugs,health,net_ingredient_cost,-0.20527248936333012
+2,Anti-Arrhythmic Drugs,IMD,items,-0.18976420880369974
+2,Anti-Arrhythmic Drugs,IMD,quantity,-0.26025647921388007
+2,Anti-Arrhythmic Drugs,IMD,act_cost,-0.19913369196762018
+2,Anti-Arrhythmic Drugs,IMD,net_ingredient_cost,-0.19906646634392738
+2,Anti-Arrhythmic Drugs,children,items,-0.23057700122949684
+2,Anti-Arrhythmic Drugs,children,quantity,-0.29599850767146063
+2,Anti-Arrhythmic Drugs,children,act_cost,-0.2257936863870414
+2,Anti-Arrhythmic Drugs,children,net_ingredient_cost,-0.2258001047104758
+2,Anti-Arrhythmic Drugs,employment,items,-0.18741372337560477
+2,Anti-Arrhythmic Drugs,employment,quantity,-0.2597540997383186
+2,Anti-Arrhythmic Drugs,employment,act_cost,-0.1935133092423634
+2,Anti-Arrhythmic Drugs,employment,net_ingredient_cost,-0.19357301053931011
+2,Anti-Arrhythmic Drugs,environment,items,-0.06052233563270144
+2,Anti-Arrhythmic Drugs,environment,quantity,-0.10780651882364463
+2,Anti-Arrhythmic Drugs,environment,act_cost,-0.08494055599419732
+2,Anti-Arrhythmic Drugs,environment,net_ingredient_cost,-0.08488510649806316
+2,Anti-Arrhythmic Drugs,living,items,0.049525890813032054
+2,Anti-Arrhythmic Drugs,living,quantity,0.0039144639546105885
+2,Anti-Arrhythmic Drugs,living,act_cost,-0.005822673859169919
+2,Anti-Arrhythmic Drugs,living,net_ingredient_cost,-0.005729261192905744
+2,Beta-Adrenoceptor Blocking Drugs,crime,items,-0.3629969140369366
+2,Beta-Adrenoceptor Blocking Drugs,crime,quantity,-0.345518831630012
+2,Beta-Adrenoceptor Blocking Drugs,crime,act_cost,-0.34344641788702146
+2,Beta-Adrenoceptor Blocking Drugs,crime,net_ingredient_cost,-0.3441657995922602
+2,Beta-Adrenoceptor Blocking Drugs,education,items,-0.11802781598742913
+2,Beta-Adrenoceptor Blocking Drugs,education,quantity,-0.14016252127635012
+2,Beta-Adrenoceptor Blocking Drugs,education,act_cost,-0.13950136770659852
+2,Beta-Adrenoceptor Blocking Drugs,education,net_ingredient_cost,-0.13997779540530234
+2,Beta-Adrenoceptor Blocking Drugs,housing,items,0.0860353464286728
+2,Beta-Adrenoceptor Blocking Drugs,housing,quantity,0.05313967581168594
+2,Beta-Adrenoceptor Blocking Drugs,housing,act_cost,0.05196363310578878
+2,Beta-Adrenoceptor Blocking Drugs,housing,net_ingredient_cost,0.05309339565294433
+2,Beta-Adrenoceptor Blocking Drugs,income,items,-0.21354424185599946
+2,Beta-Adrenoceptor Blocking Drugs,income,quantity,-0.2302543374284704
+2,Beta-Adrenoceptor Blocking Drugs,income,act_cost,-0.22975339074732495
+2,Beta-Adrenoceptor Blocking Drugs,income,net_ingredient_cost,-0.23077931793542014
+2,Beta-Adrenoceptor Blocking Drugs,health,items,-0.14413091612987702
+2,Beta-Adrenoceptor Blocking Drugs,health,quantity,-0.17709133521684065
+2,Beta-Adrenoceptor Blocking Drugs,health,act_cost,-0.17030004912919466
+2,Beta-Adrenoceptor Blocking Drugs,health,net_ingredient_cost,-0.17159793032760964
+2,Beta-Adrenoceptor Blocking Drugs,IMD,items,-0.15588270798223544
+2,Beta-Adrenoceptor Blocking Drugs,IMD,quantity,-0.18451570491281347
+2,Beta-Adrenoceptor Blocking Drugs,IMD,act_cost,-0.18022720476655846
+2,Beta-Adrenoceptor Blocking Drugs,IMD,net_ingredient_cost,-0.18098125283307476
+2,Beta-Adrenoceptor Blocking Drugs,children,items,-0.2085727595199287
+2,Beta-Adrenoceptor Blocking Drugs,children,quantity,-0.2259473039269022
+2,Beta-Adrenoceptor Blocking Drugs,children,act_cost,-0.22572118155211846
+2,Beta-Adrenoceptor Blocking Drugs,children,net_ingredient_cost,-0.22687406988294084
+2,Beta-Adrenoceptor Blocking Drugs,employment,items,-0.1369938105043961
+2,Beta-Adrenoceptor Blocking Drugs,employment,quantity,-0.1669405081592183
+2,Beta-Adrenoceptor Blocking Drugs,employment,act_cost,-0.16310104207155948
+2,Beta-Adrenoceptor Blocking Drugs,employment,net_ingredient_cost,-0.1643126317086521
+2,Beta-Adrenoceptor Blocking Drugs,environment,items,-0.07686292005572105
+2,Beta-Adrenoceptor Blocking Drugs,environment,quantity,-0.08698731386570195
+2,Beta-Adrenoceptor Blocking Drugs,environment,act_cost,-0.07616022768708591
+2,Beta-Adrenoceptor Blocking Drugs,environment,net_ingredient_cost,-0.07571660433226486
+2,Beta-Adrenoceptor Blocking Drugs,living,items,0.046854648633758864
+2,Beta-Adrenoceptor Blocking Drugs,living,quantity,0.02355912459460247
+2,Beta-Adrenoceptor Blocking Drugs,living,act_cost,0.032468619501438936
+2,Beta-Adrenoceptor Blocking Drugs,living,net_ingredient_cost,0.033413165779365914
+2,Hypertension and Heart Failure,crime,items,-0.37122210108153025
+2,Hypertension and Heart Failure,crime,quantity,-0.3590982797471362
+2,Hypertension and Heart Failure,crime,act_cost,-0.30525507591299206
+2,Hypertension and Heart Failure,crime,net_ingredient_cost,-0.3049308516068184
+2,Hypertension and Heart Failure,education,items,-0.1279275316925128
+2,Hypertension and Heart Failure,education,quantity,-0.15636204919724525
+2,Hypertension and Heart Failure,education,act_cost,-0.1474639580567365
+2,Hypertension and Heart Failure,education,net_ingredient_cost,-0.14750658745736372
+2,Hypertension and Heart Failure,housing,items,0.11274388671394324
+2,Hypertension and Heart Failure,housing,quantity,0.07858641228817093
+2,Hypertension and Heart Failure,housing,act_cost,0.10212413548313828
+2,Hypertension and Heart Failure,housing,net_ingredient_cost,0.10264615018255265
+2,Hypertension and Heart Failure,income,items,-0.22100540950579625
+2,Hypertension and Heart Failure,income,quantity,-0.24179352600857287
+2,Hypertension and Heart Failure,income,act_cost,-0.2112296895383041
+2,Hypertension and Heart Failure,income,net_ingredient_cost,-0.21135596655556446
+2,Hypertension and Heart Failure,health,items,-0.1640356572809735
+2,Hypertension and Heart Failure,health,quantity,-0.1993951157964008
+2,Hypertension and Heart Failure,health,act_cost,-0.18269708971056295
+2,Hypertension and Heart Failure,health,net_ingredient_cost,-0.18304610220340214
+2,Hypertension and Heart Failure,IMD,items,-0.1646318245158316
+2,Hypertension and Heart Failure,IMD,quantity,-0.1980041599415801
+2,Hypertension and Heart Failure,IMD,act_cost,-0.17410391847388496
+2,Hypertension and Heart Failure,IMD,net_ingredient_cost,-0.1741914014448747
+2,Hypertension and Heart Failure,children,items,-0.21729469803778076
+2,Hypertension and Heart Failure,children,quantity,-0.2388455101116567
+2,Hypertension and Heart Failure,children,act_cost,-0.21363611126910706
+2,Hypertension and Heart Failure,children,net_ingredient_cost,-0.2138492441162567
+2,Hypertension and Heart Failure,employment,items,-0.15527155540999077
+2,Hypertension and Heart Failure,employment,quantity,-0.18716231310250092
+2,Hypertension and Heart Failure,employment,act_cost,-0.17394099826818804
+2,Hypertension and Heart Failure,employment,net_ingredient_cost,-0.1742898787596376
+2,Hypertension and Heart Failure,environment,items,-0.06747569793641646
+2,Hypertension and Heart Failure,environment,quantity,-0.08240197230513194
+2,Hypertension and Heart Failure,environment,act_cost,-0.05035388396069268
+2,Hypertension and Heart Failure,environment,net_ingredient_cost,-0.04998951423998281
+2,Hypertension and Heart Failure,living,items,0.061490703270839005
+2,Hypertension and Heart Failure,living,quantity,0.03240802558664406
+2,Hypertension and Heart Failure,living,act_cost,0.05258022808326816
+2,Hypertension and Heart Failure,living,net_ingredient_cost,0.052993081424589576
+2,Nit Calc Block & Other Antianginal Drugs,crime,items,-0.3306343719332232
+2,Nit Calc Block & Other Antianginal Drugs,crime,quantity,-0.3079162374583286
+2,Nit Calc Block & Other Antianginal Drugs,crime,act_cost,-0.2906136061084847
+2,Nit Calc Block & Other Antianginal Drugs,crime,net_ingredient_cost,-0.2907990868808262
+2,Nit Calc Block & Other Antianginal Drugs,education,items,-0.12996038356313422
+2,Nit Calc Block & Other Antianginal Drugs,education,quantity,-0.15180127207111485
+2,Nit Calc Block & Other Antianginal Drugs,education,act_cost,-0.11488204233560718
+2,Nit Calc Block & Other Antianginal Drugs,education,net_ingredient_cost,-0.11487237536587185
+2,Nit Calc Block & Other Antianginal Drugs,housing,items,0.14611850832521267
+2,Nit Calc Block & Other Antianginal Drugs,housing,quantity,0.11054243782614309
+2,Nit Calc Block & Other Antianginal Drugs,housing,act_cost,0.09584554152083
+2,Nit Calc Block & Other Antianginal Drugs,housing,net_ingredient_cost,0.09601198778449996
+2,Nit Calc Block & Other Antianginal Drugs,income,items,-0.18513712700235382
+2,Nit Calc Block & Other Antianginal Drugs,income,quantity,-0.19843677370925353
+2,Nit Calc Block & Other Antianginal Drugs,income,act_cost,-0.16489512805260756
+2,Nit Calc Block & Other Antianginal Drugs,income,net_ingredient_cost,-0.16521032417397788
+2,Nit Calc Block & Other Antianginal Drugs,health,items,-0.15252067533223077
+2,Nit Calc Block & Other Antianginal Drugs,health,quantity,-0.18110665410498927
+2,Nit Calc Block & Other Antianginal Drugs,health,act_cost,-0.13227489797308534
+2,Nit Calc Block & Other Antianginal Drugs,health,net_ingredient_cost,-0.13257089279313933
+2,Nit Calc Block & Other Antianginal Drugs,IMD,items,-0.13671324219036174
+2,Nit Calc Block & Other Antianginal Drugs,IMD,quantity,-0.16351375099413784
+2,Nit Calc Block & Other Antianginal Drugs,IMD,act_cost,-0.12614192199653299
+2,Nit Calc Block & Other Antianginal Drugs,IMD,net_ingredient_cost,-0.1263395161381508
+2,Nit Calc Block & Other Antianginal Drugs,children,items,-0.18916984927822791
+2,Nit Calc Block & Other Antianginal Drugs,children,quantity,-0.20386848474147728
+2,Nit Calc Block & Other Antianginal Drugs,children,act_cost,-0.1722093797470643
+2,Nit Calc Block & Other Antianginal Drugs,children,net_ingredient_cost,-0.17257118983355077
+2,Nit Calc Block & Other Antianginal Drugs,employment,items,-0.14012462920828372
+2,Nit Calc Block & Other Antianginal Drugs,employment,quantity,-0.16613809730561338
+2,Nit Calc Block & Other Antianginal Drugs,employment,act_cost,-0.12426194479345523
+2,Nit Calc Block & Other Antianginal Drugs,employment,net_ingredient_cost,-0.12455148547776834
+2,Nit Calc Block & Other Antianginal Drugs,environment,items,-0.01890594405412745
+2,Nit Calc Block & Other Antianginal Drugs,environment,quantity,-0.030199008326005628
+2,Nit Calc Block & Other Antianginal Drugs,environment,act_cost,-0.011259694400642837
+2,Nit Calc Block & Other Antianginal Drugs,environment,net_ingredient_cost,-0.011230830237206363
+2,Nit Calc Block & Other Antianginal Drugs,living,items,0.10501577898962319
+2,Nit Calc Block & Other Antianginal Drugs,living,quantity,0.07755965042874956
+2,Nit Calc Block & Other Antianginal Drugs,living,act_cost,0.09259938113332095
+2,Nit Calc Block & Other Antianginal Drugs,living,net_ingredient_cost,0.0927593164817208
+2,Sympathomimetics,crime,items,-0.25339472856343065
+2,Sympathomimetics,crime,quantity,-0.19231463959691006
+2,Sympathomimetics,crime,act_cost,-0.1426054264961865
+2,Sympathomimetics,crime,net_ingredient_cost,-0.14186224623028432
+2,Sympathomimetics,education,items,-0.12589448236179202
+2,Sympathomimetics,education,quantity,-0.10245402918867186
+2,Sympathomimetics,education,act_cost,-0.06751336532270226
+2,Sympathomimetics,education,net_ingredient_cost,-0.06708959982276147
+2,Sympathomimetics,housing,items,0.06846979722630854
+2,Sympathomimetics,housing,quantity,0.07079258419145627
+2,Sympathomimetics,housing,act_cost,0.06884699182294936
+2,Sympathomimetics,housing,net_ingredient_cost,0.06834959945578956
+2,Sympathomimetics,income,items,-0.15652273702048208
+2,Sympathomimetics,income,quantity,-0.1283270760827548
+2,Sympathomimetics,income,act_cost,-0.08528807486878166
+2,Sympathomimetics,income,net_ingredient_cost,-0.08471541987693387
+2,Sympathomimetics,health,items,-0.1363747229297398
+2,Sympathomimetics,health,quantity,-0.12342379191650361
+2,Sympathomimetics,health,act_cost,-0.08558873881068071
+2,Sympathomimetics,health,net_ingredient_cost,-0.08501384134548459
+2,Sympathomimetics,IMD,items,-0.13806715932627306
+2,Sympathomimetics,IMD,quantity,-0.10871033886984911
+2,Sympathomimetics,IMD,act_cost,-0.06784869550967483
+2,Sympathomimetics,IMD,net_ingredient_cost,-0.06734784048080975
+2,Sympathomimetics,children,items,-0.16378597793032218
+2,Sympathomimetics,children,quantity,-0.1294935341084955
+2,Sympathomimetics,children,act_cost,-0.08646645409383849
+2,Sympathomimetics,children,net_ingredient_cost,-0.08588405705917623
+2,Sympathomimetics,employment,items,-0.1353042527859225
+2,Sympathomimetics,employment,quantity,-0.1126198721623672
+2,Sympathomimetics,employment,act_cost,-0.0776473368359898
+2,Sympathomimetics,employment,net_ingredient_cost,-0.07712609348126936
+2,Sympathomimetics,environment,items,-0.07887420805317955
+2,Sympathomimetics,environment,quantity,-0.040335924432130785
+2,Sympathomimetics,environment,act_cost,-0.028693603511366645
+2,Sympathomimetics,environment,net_ingredient_cost,-0.02833784548889368
+2,Sympathomimetics,living,items,0.0007758036953540412
+2,Sympathomimetics,living,quantity,0.033045094806992546
+2,Sympathomimetics,living,act_cost,0.04321116354724925
+2,Sympathomimetics,living,net_ingredient_cost,0.043351266535670965
+2,Anticoagulants And Protamine,crime,items,-0.3770722555565017
+2,Anticoagulants And Protamine,crime,quantity,-0.3544218226180996
+2,Anticoagulants And Protamine,crime,act_cost,-0.3122621116554375
+2,Anticoagulants And Protamine,crime,net_ingredient_cost,-0.31243353284006176
+2,Anticoagulants And Protamine,education,items,-0.13381793480128018
+2,Anticoagulants And Protamine,education,quantity,-0.13996326881667678
+2,Anticoagulants And Protamine,education,act_cost,-0.135900330949806
+2,Anticoagulants And Protamine,education,net_ingredient_cost,-0.13599667729319698
+2,Anticoagulants And Protamine,housing,items,0.10500449539056379
+2,Anticoagulants And Protamine,housing,quantity,0.047796556408005335
+2,Anticoagulants And Protamine,housing,act_cost,0.06492561231319786
+2,Anticoagulants And Protamine,housing,net_ingredient_cost,0.06521785442788455
+2,Anticoagulants And Protamine,income,items,-0.23776812296511562
+2,Anticoagulants And Protamine,income,quantity,-0.24392817835043526
+2,Anticoagulants And Protamine,income,act_cost,-0.21115844816132368
+2,Anticoagulants And Protamine,income,net_ingredient_cost,-0.21123216939385503
+2,Anticoagulants And Protamine,health,items,-0.1912881523718734
+2,Anticoagulants And Protamine,health,quantity,-0.19344285449887627
+2,Anticoagulants And Protamine,health,act_cost,-0.1705992275015385
+2,Anticoagulants And Protamine,health,net_ingredient_cost,-0.1706921446306325
+2,Anticoagulants And Protamine,IMD,items,-0.1834249240737256
+2,Anticoagulants And Protamine,IMD,quantity,-0.19715139998257228
+2,Anticoagulants And Protamine,IMD,act_cost,-0.17183707249095378
+2,Anticoagulants And Protamine,IMD,net_ingredient_cost,-0.17188566034005753
+2,Anticoagulants And Protamine,children,items,-0.23564923519999945
+2,Anticoagulants And Protamine,children,quantity,-0.24125963928282873
+2,Anticoagulants And Protamine,children,act_cost,-0.21197825395905984
+2,Anticoagulants And Protamine,children,net_ingredient_cost,-0.2120890883576307
+2,Anticoagulants And Protamine,employment,items,-0.17701440336437682
+2,Anticoagulants And Protamine,employment,quantity,-0.18221574062767937
+2,Anticoagulants And Protamine,employment,act_cost,-0.1616349433971893
+2,Anticoagulants And Protamine,employment,net_ingredient_cost,-0.1617437804636989
+2,Anticoagulants And Protamine,environment,items,-0.06190259487753314
+2,Anticoagulants And Protamine,environment,quantity,-0.07667647830535512
+2,Anticoagulants And Protamine,environment,act_cost,-0.06655243755132118
+2,Anticoagulants And Protamine,environment,net_ingredient_cost,-0.06645577268418065
+2,Anticoagulants And Protamine,living,items,0.056873885266215014
+2,Anticoagulants And Protamine,living,quantity,0.0303061309115868
+2,Anticoagulants And Protamine,living,act_cost,0.03164385515858361
+2,Anticoagulants And Protamine,living,net_ingredient_cost,0.03186133318984742
+2,Antiplatelet Drugs,crime,items,-0.3540883048728087
+2,Antiplatelet Drugs,crime,quantity,-0.3677734939967071
+2,Antiplatelet Drugs,crime,act_cost,-0.34597250132128965
+2,Antiplatelet Drugs,crime,net_ingredient_cost,-0.34683862093380213
+2,Antiplatelet Drugs,education,items,-0.10291346617640158
+2,Antiplatelet Drugs,education,quantity,-0.12480549594596956
+2,Antiplatelet Drugs,education,act_cost,-0.10622597886264981
+2,Antiplatelet Drugs,education,net_ingredient_cost,-0.10638153000253102
+2,Antiplatelet Drugs,housing,items,0.10457701326807606
+2,Antiplatelet Drugs,housing,quantity,0.07833170833454721
+2,Antiplatelet Drugs,housing,act_cost,0.054187076574406565
+2,Antiplatelet Drugs,housing,net_ingredient_cost,0.05535615041118247
+2,Antiplatelet Drugs,income,items,-0.18937625171301636
+2,Antiplatelet Drugs,income,quantity,-0.22183219427881581
+2,Antiplatelet Drugs,income,act_cost,-0.19709156189446794
+2,Antiplatelet Drugs,income,net_ingredient_cost,-0.19807424686748315
+2,Antiplatelet Drugs,health,items,-0.1272116362695195
+2,Antiplatelet Drugs,health,quantity,-0.16566117787332607
+2,Antiplatelet Drugs,health,act_cost,-0.12955546699813544
+2,Antiplatelet Drugs,health,net_ingredient_cost,-0.13058772964612028
+2,Antiplatelet Drugs,IMD,items,-0.13147271932412508
+2,Antiplatelet Drugs,IMD,quantity,-0.16763289149125293
+2,Antiplatelet Drugs,IMD,act_cost,-0.14216832155597608
+2,Antiplatelet Drugs,IMD,net_ingredient_cost,-0.14269509120487223
+2,Antiplatelet Drugs,children,items,-0.18666808304848598
+2,Antiplatelet Drugs,children,quantity,-0.21888723438101731
+2,Antiplatelet Drugs,children,act_cost,-0.19287802550063046
+2,Antiplatelet Drugs,children,net_ingredient_cost,-0.19405119220510694
+2,Antiplatelet Drugs,employment,items,-0.11629443705700056
+2,Antiplatelet Drugs,employment,quantity,-0.150262802608031
+2,Antiplatelet Drugs,employment,act_cost,-0.11955629946283801
+2,Antiplatelet Drugs,employment,net_ingredient_cost,-0.12052929353970547
+2,Antiplatelet Drugs,environment,items,-0.04177664370773597
+2,Antiplatelet Drugs,environment,quantity,-0.06229643842932941
+2,Antiplatelet Drugs,environment,act_cost,-0.05083444852224684
+2,Antiplatelet Drugs,environment,net_ingredient_cost,-0.050425251122255085
+2,Antiplatelet Drugs,living,items,0.07543747659446483
+2,Antiplatelet Drugs,living,quantity,0.050801154820812176
+2,Antiplatelet Drugs,living,act_cost,0.052973351125784364
+2,Antiplatelet Drugs,living,net_ingredient_cost,0.054141112058664016
+2,Stable Angina Acute/Crnry Synd&Fibrin,crime,items,-0.5615821753084115
+2,Stable Angina Acute/Crnry Synd&Fibrin,crime,quantity,-0.5445907445968494
+2,Stable Angina Acute/Crnry Synd&Fibrin,crime,act_cost,-0.5180171778670358
+2,Stable Angina Acute/Crnry Synd&Fibrin,crime,net_ingredient_cost,-0.5159080821155546
+2,Stable Angina Acute/Crnry Synd&Fibrin,education,items,-0.099794004768205
+2,Stable Angina Acute/Crnry Synd&Fibrin,education,quantity,-0.08393794709121626
+2,Stable Angina Acute/Crnry Synd&Fibrin,education,act_cost,-0.07980647917447417
+2,Stable Angina Acute/Crnry Synd&Fibrin,education,net_ingredient_cost,-0.0856183974952925
+2,Stable Angina Acute/Crnry Synd&Fibrin,housing,items,0.9505227108050689
+2,Stable Angina Acute/Crnry Synd&Fibrin,housing,quantity,0.6714565864617996
+2,Stable Angina Acute/Crnry Synd&Fibrin,housing,act_cost,0.6687888378321328
+2,Stable Angina Acute/Crnry Synd&Fibrin,housing,net_ingredient_cost,0.6726265489508881
+2,Stable Angina Acute/Crnry Synd&Fibrin,income,items,0.0320944402575604
+2,Stable Angina Acute/Crnry Synd&Fibrin,income,quantity,-0.15846089200489957
+2,Stable Angina Acute/Crnry Synd&Fibrin,income,act_cost,-0.1271144458920196
+2,Stable Angina Acute/Crnry Synd&Fibrin,income,net_ingredient_cost,-0.1246365067253907
+2,Stable Angina Acute/Crnry Synd&Fibrin,health,items,-0.013705176559471934
+2,Stable Angina Acute/Crnry Synd&Fibrin,health,quantity,-0.191565964444827
+2,Stable Angina Acute/Crnry Synd&Fibrin,health,act_cost,-0.15969001379757086
+2,Stable Angina Acute/Crnry Synd&Fibrin,health,net_ingredient_cost,-0.15838183203594952
+2,Stable Angina Acute/Crnry Synd&Fibrin,IMD,items,0.6835876620927507
+2,Stable Angina Acute/Crnry Synd&Fibrin,IMD,quantity,0.38378382925418886
+2,Stable Angina Acute/Crnry Synd&Fibrin,IMD,act_cost,0.39909189274766715
+2,Stable Angina Acute/Crnry Synd&Fibrin,IMD,net_ingredient_cost,0.4030413391357462
+2,Stable Angina Acute/Crnry Synd&Fibrin,children,items,0.08693848095923973
+2,Stable Angina Acute/Crnry Synd&Fibrin,children,quantity,-0.11670722355608941
+2,Stable Angina Acute/Crnry Synd&Fibrin,children,act_cost,-0.08597269613010841
+2,Stable Angina Acute/Crnry Synd&Fibrin,children,net_ingredient_cost,-0.08355011662361986
+2,Stable Angina Acute/Crnry Synd&Fibrin,employment,items,0.045524200312272695
+2,Stable Angina Acute/Crnry Synd&Fibrin,employment,quantity,-0.13759078684575057
+2,Stable Angina Acute/Crnry Synd&Fibrin,employment,act_cost,-0.1087113694642953
+2,Stable Angina Acute/Crnry Synd&Fibrin,employment,net_ingredient_cost,-0.10465835474536726
+2,Stable Angina Acute/Crnry Synd&Fibrin,environment,items,0.4160581774008906
+2,Stable Angina Acute/Crnry Synd&Fibrin,environment,quantity,0.1478093986438034
+2,Stable Angina Acute/Crnry Synd&Fibrin,environment,act_cost,0.17208566858220686
+2,Stable Angina Acute/Crnry Synd&Fibrin,environment,net_ingredient_cost,0.1753359218194501
+2,Stable Angina Acute/Crnry Synd&Fibrin,living,items,0.5945862976974694
+2,Stable Angina Acute/Crnry Synd&Fibrin,living,quantity,0.30249730096563854
+2,Stable Angina Acute/Crnry Synd&Fibrin,living,act_cost,0.3213034950839107
+2,Stable Angina Acute/Crnry Synd&Fibrin,living,net_ingredient_cost,0.3249401415164597
+2,Antifibrinolytic Drugs & Haemostatics,crime,items,-0.2639791385373031
+2,Antifibrinolytic Drugs & Haemostatics,crime,quantity,-0.2528180809800509
+2,Antifibrinolytic Drugs & Haemostatics,crime,act_cost,-0.23606271083606067
+2,Antifibrinolytic Drugs & Haemostatics,crime,net_ingredient_cost,-0.2361089146676956
+2,Antifibrinolytic Drugs & Haemostatics,education,items,-0.10312371630084415
+2,Antifibrinolytic Drugs & Haemostatics,education,quantity,-0.10881988541259038
+2,Antifibrinolytic Drugs & Haemostatics,education,act_cost,-0.0994214280619988
+2,Antifibrinolytic Drugs & Haemostatics,education,net_ingredient_cost,-0.09957819164067053
+2,Antifibrinolytic Drugs & Haemostatics,housing,items,0.09441752388297338
+2,Antifibrinolytic Drugs & Haemostatics,housing,quantity,0.08086250486133147
+2,Antifibrinolytic Drugs & Haemostatics,housing,act_cost,0.06469205695962826
+2,Antifibrinolytic Drugs & Haemostatics,housing,net_ingredient_cost,0.06487100760314299
+2,Antifibrinolytic Drugs & Haemostatics,income,items,-0.16171779446413076
+2,Antifibrinolytic Drugs & Haemostatics,income,quantity,-0.16086545799099705
+2,Antifibrinolytic Drugs & Haemostatics,income,act_cost,-0.1484047756832874
+2,Antifibrinolytic Drugs & Haemostatics,income,net_ingredient_cost,-0.14852282381534226
+2,Antifibrinolytic Drugs & Haemostatics,health,items,-0.14461638179051897
+2,Antifibrinolytic Drugs & Haemostatics,health,quantity,-0.14194469562239984
+2,Antifibrinolytic Drugs & Haemostatics,health,act_cost,-0.12725936209323027
+2,Antifibrinolytic Drugs & Haemostatics,health,net_ingredient_cost,-0.1274064554747732
+2,Antifibrinolytic Drugs & Haemostatics,IMD,items,-0.1293355055487523
+2,Antifibrinolytic Drugs & Haemostatics,IMD,quantity,-0.13304733196461968
+2,Antifibrinolytic Drugs & Haemostatics,IMD,act_cost,-0.12351936951104728
+2,Antifibrinolytic Drugs & Haemostatics,IMD,net_ingredient_cost,-0.1236405037849751
+2,Antifibrinolytic Drugs & Haemostatics,children,items,-0.1607522799489181
+2,Antifibrinolytic Drugs & Haemostatics,children,quantity,-0.15745352521562797
+2,Antifibrinolytic Drugs & Haemostatics,children,act_cost,-0.1451244734322573
+2,Antifibrinolytic Drugs & Haemostatics,children,net_ingredient_cost,-0.14525731620302054
+2,Antifibrinolytic Drugs & Haemostatics,employment,items,-0.12665935931636393
+2,Antifibrinolytic Drugs & Haemostatics,employment,quantity,-0.12857533416826278
+2,Antifibrinolytic Drugs & Haemostatics,employment,act_cost,-0.11983847371782062
+2,Antifibrinolytic Drugs & Haemostatics,employment,net_ingredient_cost,-0.12002640341752743
+2,Antifibrinolytic Drugs & Haemostatics,environment,items,-0.06439576452343045
+2,Antifibrinolytic Drugs & Haemostatics,environment,quantity,-0.06753348940708304
+2,Antifibrinolytic Drugs & Haemostatics,environment,act_cost,-0.060449252419605075
+2,Antifibrinolytic Drugs & Haemostatics,environment,net_ingredient_cost,-0.06040474244878039
+2,Antifibrinolytic Drugs & Haemostatics,living,items,0.02347878732025672
+2,Antifibrinolytic Drugs & Haemostatics,living,quantity,0.015280221556894626
+2,Antifibrinolytic Drugs & Haemostatics,living,act_cost,0.011928716286184287
+2,Antifibrinolytic Drugs & Haemostatics,living,net_ingredient_cost,0.01203953999433539
+2,Lipid-Regulating Drugs,crime,items,-0.3475699315276177
+2,Lipid-Regulating Drugs,crime,quantity,-0.34580200169172726
+2,Lipid-Regulating Drugs,crime,act_cost,-0.28489898883724935
+2,Lipid-Regulating Drugs,crime,net_ingredient_cost,-0.2847040566574981
+2,Lipid-Regulating Drugs,education,items,-0.09967448978454514
+2,Lipid-Regulating Drugs,education,quantity,-0.13274257615916069
+2,Lipid-Regulating Drugs,education,act_cost,-0.1266754759968527
+2,Lipid-Regulating Drugs,education,net_ingredient_cost,-0.1267075992595976
+2,Lipid-Regulating Drugs,housing,items,0.09922207050384065
+2,Lipid-Regulating Drugs,housing,quantity,0.07108583930938817
+2,Lipid-Regulating Drugs,housing,act_cost,0.08531718239187455
+2,Lipid-Regulating Drugs,housing,net_ingredient_cost,0.0856118881838755
+2,Lipid-Regulating Drugs,income,items,-0.19446170678293098
+2,Lipid-Regulating Drugs,income,quantity,-0.223625560167413
+2,Lipid-Regulating Drugs,income,act_cost,-0.184658948831244
+2,Lipid-Regulating Drugs,income,net_ingredient_cost,-0.18476149753012758
+2,Lipid-Regulating Drugs,health,items,-0.1315285026007684
+2,Lipid-Regulating Drugs,health,quantity,-0.17731824276633246
+2,Lipid-Regulating Drugs,health,act_cost,-0.15584365302529224
+2,Lipid-Regulating Drugs,health,net_ingredient_cost,-0.15611330641550403
+2,Lipid-Regulating Drugs,IMD,items,-0.1367975723627887
+2,Lipid-Regulating Drugs,IMD,quantity,-0.1768421416528063
+2,Lipid-Regulating Drugs,IMD,act_cost,-0.14695261685193273
+2,Lipid-Regulating Drugs,IMD,net_ingredient_cost,-0.14703305672115013
+2,Lipid-Regulating Drugs,children,items,-0.18966917465145194
+2,Lipid-Regulating Drugs,children,quantity,-0.2195257222431454
+2,Lipid-Regulating Drugs,children,act_cost,-0.18433281450057798
+2,Lipid-Regulating Drugs,children,net_ingredient_cost,-0.18449124044104567
+2,Lipid-Regulating Drugs,employment,items,-0.12225275281217446
+2,Lipid-Regulating Drugs,employment,quantity,-0.16246268750208132
+2,Lipid-Regulating Drugs,employment,act_cost,-0.14219562320528226
+2,Lipid-Regulating Drugs,employment,net_ingredient_cost,-0.14244755826408473
+2,Lipid-Regulating Drugs,environment,items,-0.0622512311098666
+2,Lipid-Regulating Drugs,environment,quantity,-0.07690741909753675
+2,Lipid-Regulating Drugs,environment,act_cost,-0.03667671925685356
+2,Lipid-Regulating Drugs,environment,net_ingredient_cost,-0.03647675361379449
+2,Lipid-Regulating Drugs,living,items,0.05830974193266651
+2,Lipid-Regulating Drugs,living,quantity,0.03219061106859512
+2,Lipid-Regulating Drugs,living,act_cost,0.058046439410603494
+2,Lipid-Regulating Drugs,living,net_ingredient_cost,0.05827991094314815
+2,Local Sclerosants,crime,items,-0.015595635614716535
+2,Local Sclerosants,crime,quantity,0.1437194844862214
+2,Local Sclerosants,crime,act_cost,0.08420533212701212
+2,Local Sclerosants,crime,net_ingredient_cost,0.08487703052584028
+2,Local Sclerosants,education,items,0.025016239183003715
+2,Local Sclerosants,education,quantity,0.21512206032541387
+2,Local Sclerosants,education,act_cost,0.14378145143352897
+2,Local Sclerosants,education,net_ingredient_cost,0.1466977944803329
+2,Local Sclerosants,housing,items,-0.173110522446045
+2,Local Sclerosants,housing,quantity,-0.20278776619511737
+2,Local Sclerosants,housing,act_cost,-0.23502453613970473
+2,Local Sclerosants,housing,net_ingredient_cost,-0.23541116593906403
+2,Local Sclerosants,income,items,0.008913907921349641
+2,Local Sclerosants,income,quantity,0.2978479215043669
+2,Local Sclerosants,income,act_cost,0.19619914786979936
+2,Local Sclerosants,income,net_ingredient_cost,0.1978177274142185
+2,Local Sclerosants,health,items,-0.03339804703885994
+2,Local Sclerosants,health,quantity,0.3145142955411194
+2,Local Sclerosants,health,act_cost,0.21773082953376086
+2,Local Sclerosants,health,net_ingredient_cost,0.21800021828179328
+2,Local Sclerosants,IMD,items,0.011660017964254341
+2,Local Sclerosants,IMD,quantity,0.24927814276565616
+2,Local Sclerosants,IMD,act_cost,0.15003926536997472
+2,Local Sclerosants,IMD,net_ingredient_cost,0.15136736954843258
+2,Local Sclerosants,children,items,-0.04214241757830115
+2,Local Sclerosants,children,quantity,0.1874283322784583
+2,Local Sclerosants,children,act_cost,0.09328685050100445
+2,Local Sclerosants,children,net_ingredient_cost,0.09542691594478339
+2,Local Sclerosants,employment,items,0.042628528576287676
+2,Local Sclerosants,employment,quantity,0.3161382861396529
+2,Local Sclerosants,employment,act_cost,0.2118361624001356
+2,Local Sclerosants,employment,net_ingredient_cost,0.2128604045031134
+2,Local Sclerosants,environment,items,-0.09306347487460873
+2,Local Sclerosants,environment,quantity,0.03130537100046506
+2,Local Sclerosants,environment,act_cost,-0.023469477783395302
+2,Local Sclerosants,environment,net_ingredient_cost,-0.02404717491909549
+2,Local Sclerosants,living,items,-0.05412860592860306
+2,Local Sclerosants,living,quantity,0.005371278206288171
+2,Local Sclerosants,living,act_cost,-0.07287238651463551
+2,Local Sclerosants,living,net_ingredient_cost,-0.07530280876205063
