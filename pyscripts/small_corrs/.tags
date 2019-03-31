@@ -1,5 +1,14 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+agg	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^agg = pd.concat(corrs, ignore_index=True)$/;"	v	language:Python
+bnf_secs	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^bnf_secs = pop_avgs.bnf_sec.unique()$/;"	v	language:Python
+categories	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^categories = imd.category.unique()$/;"	v	language:Python
+corrleations	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^    corrleations = filtered_pop_avgs.groupby(['bnf_sec', 'bnf_sub_sec', 'category']).apply(corr_func)$/;"	v	language:Python
+corrs	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^corrs = []$/;"	v	language:Python
+corr_func	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^def corr_func(x):$/;"	f	language:Python
 imd	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^imd = pd.read_csv('..\/..\/data\/outer_code_norm\/IMD_outer_code.csv')$/;"	v	language:Python
+imd_avgs	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^imd_avgs = imd[['category', 'outer_code', 'value']].groupby(['category', 'outer_code']).mean().reset_index()$/;"	v	language:Python
+interpolate	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^def interpolate(r):$/;"	f	language:Python
+outer_codes	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^outer_codes = imd.outer_code.unique()$/;"	v	language:Python
 pearson	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^pearson = stats.pearsonr$/;"	v	language:Python
 pop_avgs	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^pop_avgs = pd.read_csv('..\/..\/data\/pop_avgs\/pop_avgs.csv')$/;"	v	language:Python
 spearman	/home/derek/Desktop/cs784/project/pyscripts/small_corrs/small_corrs.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
