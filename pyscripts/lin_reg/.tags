@@ -1,0 +1,10 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+combined	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^combined = wide_imd.merge(heart_avg, on='outer_code')$/;"	v	language:Python
+formula	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^formula = '\\n + '.join(f'{c} * {x}' for c,x in zip(lm.coef_, val_cols))$/;"	v	language:Python
+get_wide_imd	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^def get_wide_imd():$/;"	f	language:Python
+lm	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^lm = linear_model.LinearRegression(normalize=True)$/;"	v	language:Python
+lm	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^lm = linear_model.LinearRegression(normalize=True)$/;"	v	language:Python
+normalize_cols	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^def normalize_cols(wide, cols):$/;"	f	language:Python
+pop_avgs	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^pop_avgs = pd.read_csv('..\/..\/data\/pop_avgs\/pop_avgs.csv')$/;"	v	language:Python
+val_cols	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^val_cols = list(set(wide_imd.columns) - {'outer_code'})$/;"	v	language:Python
+wide_imd	/home/derek/Desktop/cs784/project/pyscripts/lin_reg/lin_reg.py	/^wide_imd = get_wide_imd()$/;"	v	language:Python

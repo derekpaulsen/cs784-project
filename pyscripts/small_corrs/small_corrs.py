@@ -46,7 +46,7 @@ def interpolate(r):
         v10 = r.loc[r.year == 2010][0].value
         v15 = r.loc[r.year == 2015][0].value
         delta = v15 - v10
-
+        #FIXME this is incorrect
         return [v10, v10 + delta/4, v10 + delta/2, v15 - delta/4, v15]
     except:
         return []
