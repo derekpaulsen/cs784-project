@@ -1,0 +1,7 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+avgs	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^avgs = [x + '_avg' for x in causes]$/;"	v	language:Python
+causes	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^causes = mor.columns[:-1]$/;"	v	language:Python
+combined	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^combined = mor.join(pop)$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/mortality_graphs/mortality_graphs.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
