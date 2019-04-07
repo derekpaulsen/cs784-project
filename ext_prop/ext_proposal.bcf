@@ -1923,8 +1923,14 @@
     <bcf:datasource type="file" datatype="bibtex">citations.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">ref:UKDataSets</bcf:citekey>
-    <bcf:citekey order="2">ref:SparkSQL</bcf:citekey>
+    <bcf:citekey order="1">ref:SparkSQL</bcf:citekey>
+    <bcf:citekey order="2">ref:UKDataSets</bcf:citekey>
+    <bcf:citekey order="3">ref:UKStats</bcf:citekey>
+    <bcf:citekey order="4">ref:SparkSQL</bcf:citekey>
+    <bcf:citekey order="5">ref:ZaliQL</bcf:citekey>
+    <bcf:citekey order="6">ref:ZaliQL</bcf:citekey>
+    <bcf:citekey order="7">ref:SparkSQL</bcf:citekey>
+    <bcf:citekey order="8">ref:CEM</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

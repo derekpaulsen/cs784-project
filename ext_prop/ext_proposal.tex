@@ -31,88 +31,120 @@
 %\bibliographystyle{plain}
 \begin{document}
 \maketitle
-\section{Problem}
+\section{Problem Statement}
 	There is a large amount of freely available data from various governments which provide detailed information 
-	about important aspects of life (e.g. healthcare, crime, etc.). The problem is then to process the data and 
-	integrate it with other sources to find meaningful interactions, which could inform policy and other decisions.
+	about important aspects of life (e.g. healthcare, crime, etc.). Due to the size and scope of this open data, 
+	producing useful insight from this data requires scaling both simple data exploration and anaylsis as well as
+	advanced statistical procedures for extracting meaningful relationships between observational data. Effectively 
+	addressing the challenges has the potential to greatly inform a wide variety of decisions, from how best to 
+	provide healthcare to identifying possible risk factors for economic downturn.
+	
 
-	Attempting solve this problem poses a few particular challenges,
-
+\section{Problems Encountered}
+	Attempting address the above problem poses a few particular challenges,
 
 	\subsection{Data Size}
 		Many of the datasets of interest are large (e.g. greater than a GB in size). While dealing with a couple GB of data
 		is possible on a single machine, depending on the relationship between data sets, 2GB of data can easily turn into
-		20GB after being joined, making scale out the only viable option. This problem is typically solved by using a 
-		distributed execution framework (e.g. MapReduce, TensorFlow, Spark), for our purposes interative data querying is 
-		vital for effeciently exploring the data hence we opted to use SparkSQL.
+		20GB after being joined. This problem is typically solved by using a 
+		distributed execution framework (e.g. MapReduce, TensorFlow, Spark), for our purposes interactive data querying is 
+		vital for efficiently exploring the data hence we opted to use SparkSQL ~\cite{ref:SparkSQL}.
 
 	\subsection{Finding Linkable Datasets}
 		While there is a massive amount of publicly available data from many sources, it is very difficult to find 
 		datasets that make sense to link. That is, finding two datasets which are from the same time period, concerned with 
 		the same population and may have some interesting interaction between them is far from trivial. This problem 
-		was address with a lot of googling and paitience. % TODO maybe rephrase
+		was addressed with a lot of googling and patience. % TODO maybe rephrase
 
 	\subsection{Joining Datasets}
 		Even when datasets make sense to join it is frequently the case the there isn't a simple way to do so. 
-		In particular it was found that many of the datasets which have geographic location, have different granularity.
-		For example, census data is typically the most fine grained geographic data, but statistics like mortality from
-		diseases are much coarser grain and less frequently updated. To address this problem, extensive data transformation 
-		and aggregation. In particular, the granularity of geographic data was modified to such that all the datasets 
-		use keyed by year and the outer post code.
+		In particular, we found that many of the datasets which include geographic location have different granularity.
+		For example, census data is typically the most fine grained geographic data (by postcode), but statistics like mortality from
+		diseases are much coarser grain and less frequently updated. We applied extensive data transformations to get the data at the 
+		same granularity, making it possible to use standard SQL joins on the relations.
 
 	
 	\subsection{Finding Interactions}
 		After finding datasets and figuring out how to link them, there still is the problem of finding 
 		meaningful/interesting interactions and insight. The number of possible directions for where to look for
-		interactions in datasets is an absolutely massive search space when there are 3 or 4 datasets. This problem 
-		is probably the most difficult to tackle since there really isn't a standard way of addressing this 
-		problem. For our case we found it effecitve to first interacively query and get summary statistics of the data
+		interactions in datasets is a massive search space when there are just 3 or 4 datasets. This problem 
+		is probably the most difficult to tackle since it is so data dependant.
+		For our case we found it effective to first interactively query and get summary statistics of the data
 		that we have to get a sense for possible directions and trends in the data. After doing this we ran many queries with cheap to 
-		compute statistical measures, in particular we looked at the pearson's correlation between two varibles to as kind of 
-		a filter for places to do finer analysis. Additionally we also had to use a lot of simply guessing as to
-		where to look based on common sense. For example, higher crime might lead to greater stress which might lead 
+		compute statistical measures, in particular we looked at the pearson's correlation between two variables to as kind of 
+		a filter for directions to do finer analysis. Even when filtering with cheap statistical measures, the computation time
+		is far to expensive to explore all possible interactions, hence we also had to use some notion of common sense as to 
+		what to look at.  For example, higher crime might lead to greater stress which might lead 
 		to more heart medication being prescribed on average.
 
+\section{Progress}
+	Currently we have been able to accomplish the following,
 
-\section{Goals of the Project}
+	\subsection{Data Acquisition}
+		We have been able acquire the following dataset from the UK government's open data repositories, ~\cite{ref:UKDataSets} ~\cite{ref:UKStats}
 
-	The primary goal of this project to examine trends of drug prescribing in the UK by postal code
-	and attempt to find interesting correlations between characteristics of postal codes. Current directions for where to look for correlations are, 
+		\begin{itemize}
+			\item Census Data - Both official and intermediate estimates
+			\item Indexes of Deprivation - measure of societal issues in a given area (e.g. crime)
+			\item Mortality Rates - For given classes of diseases, including heart disease, cancer, stroke
+			\item Drug Prescribing - From general practices, broken down by individual prescription written
+		\end{itemize}
+		The intersection of the data only applies to England and Wales (which covers roughly 85\% of the total population of the UK),
+		and accounts for 2011 to 2015.
+
+
+	\subsection{Data Preprocessing}
+		Each data set had a different granularity for the time and geographic size. To address this we 
+		did extensive preprocessing to normalize everything such that each data point was for the outer postcode
+		and year. This allow for easy joining between the datasets using standard SQL queries at the cost of 
+		having to use coarser grain information.
+
+	\subsection{Initial Profiling and Exploration}
+		We instantiated a cluster of three machines on CloudLab and interactively queried the data using Spark ~\cite{ref:SparkSQL} for basic statistics and 
+		checked that our normalization went as intended, that is, we were able to join the relations as we intended.
+		After the verification and initial exploration/profiling, we ran basic queries looking for correlations between 
+		rates of drugs being prescribed and the \'Indexes of Deprivation\'. For example we looked for a correlation between the 
+		rate of heart disease medication being prescribed and the crime rates in the area (which we found surprisingly high $R^2$ values).
+
+
+
+\section{Future Plans}
+	Currently we are planning on doing finer grain analysis of the data for where we have found interesting correlations
+	so far.  In particular, we want to apply the methods from ZaliQL ~\cite{ref:ZaliQL} such as CEM using SparkSQL to 
+	draw more robust conclusions from our data.
+	
+	In addition to this we plan on creating various plots of the data including,
 	\begin{itemize}
-		\item Latitude - Does living farther north or south increase the rates a which certain medications (or classes of medications) are 
-				prescribed?
-		\item Income - Does the median income of a postal code relate to which drugs are being prescribed there? Furthermore
-				 	can any disparities be explained by other data (e.g. disease prevalence rates)?
-
-		\item Disease Prevalence - Are people is certain postal codes more likely to seek treatment (i.e. be prescribed medication for) for a given disease than others?
-
-		\item Education - How does average level of education of an area affect what drugs are being prescribed in an area?
-							Additionally, how are the effects tied into other possible causes (e.g. average income)?
+		\item Drug prescribing trends as a time series (i.e. basic line plots)
+		\item Heat map of drug prescribing rates for various classes of drugs
+		\item Heat maps for mortality rates to contrast with drug prescribing rates
 	\end{itemize}
 
-\section{Approach}
-	The UK government provide many large, reliable, and representative datasets about health care in the UK ~\cite{ref:UKDataSets}. Some of 
-	these including statistics about healthcare, environment, and education. These datasets (along with possibly others) will 
-	be linked via postal code to try to find interesting interactions and correlationals.
 
-	The current plan is to use SparkSQL ~\cite{ref:SparkSQL} (with python) to do the data processing, on a cluster of a few machines on Cloud Lab. 
-	SparkSQL is ideal for this sort of exploratory data analysis for a few reasons. First, the data being processed will be 
-	structured as a relational table, which SparkSQL is intended to handle efficiently. Second, the data analysis
-	is very much exploratory, hence being able to interactively query the data using python is very useful from 
-	a productivity stand point. Finally, the datasets are quite large, (over a GB per month), hence being able to 
-	run the scripts on a cluster is essential for completing the analysis in a reasonable time.
+\section{Related Work}
+	\subsection{ZaliQL~\cite{ref:ZaliQL}}
+		ZaliQL is a framework for doing causal inference on large observational datasets using PostgreSQL. To do this, they 
+		apply fuzzy matching between the control and treatment datasets using possible confounding variables 
+		and then do casual inference. The contribution of this paper is that this procedure (which is very common in statistical anaylsis)
+		is implemented as a PostgreSQL package allowing it to scale to billions of observations.
 
-
-\section{Measuring the Outcome}
-	A serious shortcoming of the approach in this project is that there is that there is very limited 
-	ability to make causal inferences with the analysis. This being the case,
-	the ideal outcome of this project would be to find an interesting correlation between two datasets 
-	and then be able to gather more evidence for a causal relationship. For example, this could be
-	finding that the ratio of people with heart disease to the number of people being prescribed
-	medications to treat heart disease differ based on the median income of the postal code. Then 
-	begin able to find other outside sources that have found similar results via different methods
-	(e.g. a medical journal study). 
-
+	\subsection{SparkSQL~\cite{ref:SparkSQL}}
+		Interactive querying of big data is very common task in nearly any data intensive field. In the past
+		this kind of data analysis was done with a RDBMS (for example, PostgreSQL). While this provides 
+		interactive querying, SQL is not well suited for complex data analysis. 
+		SparkSQL provides a fully featured relational model for interactive data processing while allowing for 
+		the execution of arbitrary snippets of code, making it much more flexible for doing data exploration, especially 
+		when more advanced data processing is required.
+	
+	\subsection{Coarsened Exact Matching ~\cite{ref:CEM}}
+		A common problem in statistical analysis is that it is often not possible or too expensive 
+		to obtain experimental data for a subject of interest. To address this issue, observational data is
+		often used, due to its availability and price. Using observational data however doesn't allow for 
+		the control of confounding factors due to the lack of randomized assignment. Coarsened Exact Matching
+		address this problem by performing a kind of fuzzy matching between the \'control\' and \'treatment\' 
+		groups in the data and then doing analysis based on this matching. 
+	
+	
 
 \printbibliography
 \end{document}

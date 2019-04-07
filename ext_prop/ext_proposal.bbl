@@ -111,6 +111,110 @@
       \endverb
       \keyw{data warehouse,databases,hadoop,machine learning,spark}
     \endentry
+    \entry{ref:CEM}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d5707d29707d3dd00ae252d95b272ca1}{%
+           family={Iacus},
+           familyi={I\bibinitperiod},
+           given={Stefano\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           familyi={K\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1117fd1d34b5e19379f8dc2fc64b8ff7}{%
+           family={Porro},
+           familyi={P\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce7ebfeac74964c48c562645a26b2c34}
+      \strng{fullhash}{ce7ebfeac74964c48c562645a26b2c34}
+      \strng{bibnamehash}{ce7ebfeac74964c48c562645a26b2c34}
+      \strng{authorbibnamehash}{ce7ebfeac74964c48c562645a26b2c34}
+      \strng{authornamehash}{ce7ebfeac74964c48c562645a26b2c34}
+      \strng{authorfullhash}{ce7ebfeac74964c48c562645a26b2c34}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{1}
+      \field{title}{Causal Inference Without Balance Checking: Coarsened Exact Matching}
+      \field{volume}{20}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/political-analysis/article/causal-inference-without-balance-checking-coarsened-exact-matching/5ABCF5B3FC3089A87FD59CECBB3465C0
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/political-analysis/article/causal-inference-without-balance-checking-coarsened-exact-matching/5ABCF5B3FC3089A87FD59CECBB3465C0
+      \endverb
+    \endentry
+    \entry{ref:ZaliQL}{article}{}
+      \name{author}{4}{}{%
+        {{hash=866f58f5d1eeb1664972e51e9fa9671a}{%
+           family={Salimi},
+           familyi={S\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dd94213bb43400bc1a3c048b96424534}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={Corey},
+           giveni={C\bibinitperiod}}}%
+        {{hash=201df017ab33f24bec9c5a97b397fe80}{%
+           family={Ports},
+           familyi={P\bibinitperiod},
+           given={Dan\bibnamedelimb R.\bibnamedelimi K.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=dad05536948804793c3e454acd5ecb8f}{%
+           family={Suciu},
+           familyi={S\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {VLDB Endowment}%
+      }
+      \strng{namehash}{e8e97ecca02105bbf7a3a2d88483418e}
+      \strng{fullhash}{ef965a6058dbae11f8f0e39e012e77e0}
+      \strng{bibnamehash}{e8e97ecca02105bbf7a3a2d88483418e}
+      \strng{authorbibnamehash}{e8e97ecca02105bbf7a3a2d88483418e}
+      \strng{authornamehash}{e8e97ecca02105bbf7a3a2d88483418e}
+      \strng{authorfullhash}{ef965a6058dbae11f8f0e39e012e77e0}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2150-8097}
+      \field{journaltitle}{Proc. VLDB Endow.}
+      \field{month}{8}
+      \field{number}{12}
+      \field{title}{ZaliQL: Causal Inference from Observational Data at Scale}
+      \field{volume}{10}
+      \field{year}{2017}
+      \field{pages}{1957\bibrangedash 1960}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.14778/3137765.3137818
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.14778/3137765.3137818
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.14778/3137765.3137818
+      \endverb
+    \endentry
+    \entry{ref:UKStats}{misc}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ons.gov.uk/}}
+      \field{title}{UK Office of National Statistics}
+    \endentry
     \entry{ref:UKDataSets}{misc}{}
       \field{sortinit}{U}
       \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
