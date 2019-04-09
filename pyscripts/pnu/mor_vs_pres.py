@@ -6,24 +6,18 @@ from sklearn import linear_model
 spearman = stats.spearmanr;
 pearson = stats.pearsonr
 
-# bnf_sec 14 is vaccines and what not
-FLU = 'LC28 Influenza and pneumonia'
+DEATH = 'deaths'
 
 index_cols = ['year', 'msoa']
 
 prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']
 
 
-mor = pd.read_csv('../../data/msoa_norm/mortality_by_msoa.csv').set_index(index_cols)
+mor = pd.read_csv('../../data/msoa_norm/pneumonia_deaths_2013_2017_msoa.csv').set_index(index_cols)
 pop = pd.read_csv('../../data/msoa_norm/population_by_msoa.csv').set_index(index_cols)
-pres = pd.read_csv('../../data/msoa_norm/prescribe_msoa.csv')
-vaccines = pd.read_csv('./flu_vaccines_msoa.csv')
-vaccines = vaccines.groupby(index_cols).sum()
+pres = pd.read_csv('../../data/msoa_norm/penicillin_msoa.csv')
+pres = pres.groupby(index_cols).sum()
 
-
-
-
-# preprocess IMD
 imd = pd.read_csv('../../data/msoa_norm/IMD_by_msoa.csv')
 imd_cats = imd.category.unique().tolist()
 
@@ -33,18 +27,17 @@ imd.columns = pd.Index(imd.columns.levels[1])
 
 
 
-
 # get the averages, drop the nulls 
 for col in prescribe_columns:
-    vaccines[col] /= pop.total
-    vaccines.drop(vaccines.index[vaccines[col].isnull()], inplace=True)
+    pres[col] /= pop.total
+    pres.drop(pres.index[pres[col].isnull()], inplace=True)
 
 # death per 1000 people
-flu_deaths = mor[FLU] / pop.total * 1000
-flu_deaths.name = FLU
+pnu_deaths = mor[DEATH] / pop.total * 1000
+pnu_deaths.name = DEATH
 
 
-joined = vaccines.join(flu_deaths).join(imd)
+joined = pres.join(pnu_deaths).join(imd)
 nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)
 joined.drop(joined.index[nulls], inplace=True)
 
@@ -59,21 +52,21 @@ def process(joined, col):
     
     joined.drop(joined.index[joined[col].isnull()], inplace=True)
 
-    sp, sp_pval = spearman(joined[FLU], joined[col])
-    pear, pear_pval = pearson(joined[FLU], joined[col])
+    sp, sp_pval = spearman(joined[DEATH], joined[col])
+    pear, pear_pval = pearson(joined[DEATH], joined[col])
     print(f'{col} : spearman = ({sp}, {sp_pval}), pearson = ({pear}, {pear_pval})')
     print()
 
     lm = linear_model.LinearRegression()
-    lm.fit(joined[col].values.reshape(-1,1), joined[FLU])
-    rs = lm.score(joined[col].values.reshape(-1,1), joined[FLU])
+    lm.fit(joined[col].values.reshape(-1,1), joined[DEATH])
+    rs = lm.score(joined[col].values.reshape(-1,1), joined[DEATH])
     print(f'coef WITHOUT IMD = {str(lm.coef_)}')
     print(f'R^2 = {rs}')
     print()
     lm = linear_model.LinearRegression()
     all_cols = [col] + imd_cats
-    lm.fit(joined[all_cols], joined[FLU])
-    rs = lm.score(joined[all_cols], joined[FLU])
+    lm.fit(joined[all_cols], joined[DEATH])
+    rs = lm.score(joined[all_cols], joined[DEATH])
     print('\n+ '.join([f'{c} * {x}' for c,x in zip(lm.coef_, all_cols)]))
     print(f'R^2 = {rs}')
     print('\n\n')

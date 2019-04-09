@@ -1,0 +1,39 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+all_indep_vars	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^all_indep_vars = set(imd_cats + ['density'] + prescribe_columns)$/;"	v	language:Python
+confouding_vars	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^    confouding_vars = all_indep_vars - v$/;"	v	language:Python
+confouding_vars	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^    confouding_vars = all_indep_vars - {v}$/;"	v	language:Python
+DEATH	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^DEATH = 'deaths'$/;"	v	language:Python
+DEATH	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^DEATH = 'deaths'$/;"	v	language:Python
+density	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^density = pd.read_csv('..\/..\/data\/msoa_norm\/pop_density_by_msoa.csv').set_index(index_cols)['density']$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^joined = pres.join(pnu_deaths).join(imd)$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^joined = pres.join(pnu_deaths).join(imd).join(density)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/pneumonia_deaths_2013_2017_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/pneumonia_deaths_2013_2017_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pnu_deaths	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^pnu_deaths = mor[DEATH] \/ pop.total * 1000$/;"	v	language:Python
+pnu_deaths	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^pnu_deaths = mor[DEATH] \/ pop.total * 1000$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/penicillin_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^pres = pres.groupby(index_cols).sum()$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/penicillin_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^pres = pres.groupby(index_cols).sum()$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^def process(joined, col):$/;"	f	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^def process(joined, col, independant_vars):$/;"	f	language:Python
+process_two_vars	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^def process_two_vars(joined, col, independant_vars):$/;"	f	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+v	/home/derek/Desktop/cs784/project/pyscripts/pnu/mor_vs_pres_with_density.py	/^    v = {col, 'density'}$/;"	v	language:Python
