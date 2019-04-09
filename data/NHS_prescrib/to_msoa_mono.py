@@ -1,30 +1,30 @@
 import pandas as pd
-import numpy as np
+from numpy import int32, float32, int16
 from joblib import Parallel, delayed
 from zipfile import ZipFile 
 from pathlib import Path
-#import os
-#os.system("taskset -p 0xffff %d" % os.getpid())
+import os
+os.system("taskset -p 0xfffffffff %d" % os.getpid())
 
 
-import psutil
-p = psutil.Process()
-
-# reset affinity against all CPUs
-all_cpus = list(range(psutil.cpu_count()))
-p.cpu_affinity(all_cpus)
+#import psutil
+#p = psutil.Process()
+#
+## reset affinity against all CPUs
+#all_cpus = list(range(psutil.cpu_count()))
+#p.cpu_affinity(all_cpus)
 
 # total = 3
 # males = 4
 # female = 5
 
-pool = Parallel(n_jobs=12, timeout=60*100)
+pool = Parallel(n_jobs=-1, timeout=60*100)
 
 
 
 msoa_map = {}
 
-df = pd.read_csv('../linking/Postcode_to_Output_Area_to_Lower_Layer_Super_Output_Area_to_Middle_Layer_Super_Output_Area_to_Local_Authority_District_February_2018_Lookup_in_the_UK.csv')
+df = pd.read_csv('/data/Postcode_to_Output_Area_to_Lower_Layer_Super_Output_Area_to_Middle_Layer_Super_Output_Area_to_Local_Authority_District_February_2018_Lookup_in_the_UK.csv')
 
 
 msoa_map.update(
@@ -55,13 +55,13 @@ def process_zip_file(fname):
 
     clean_data = pd.DataFrame({
         'msoa' : data.PRACTICE.apply(lambda x : msoa_map.get(id_to_oc[x])),
-        'bnf_sec' : data['BNF CODE'].apply(lambda x : int(x[:2])).astype(np.int16),
-        'bnf_sub_sec' : data['BNF CODE'].apply(lambda x : int(x[2:4])).astype(np.int16),
-        'year' : data['PERIOD'].apply(lambda x : x // 100).astype(np.int16),
-        'quantity' : data.QUANTITY.astype(np.int32),
-        'items' : data.ITEMS.astype(np.int32),
-        'net_ingredient_cost' : data.NIC.astype(np.float32),
-        'act_cost' : data['ACT COST'].astype(np.float32)
+        'bnf_sec' : data['BNF CODE'].apply(lambda x : int(x[:2])).astype(int16),
+        'bnf_sub_sec' : data['BNF CODE'].apply(lambda x : int(x[2:4])).astype(int16),
+        'year' : data['PERIOD'].apply(lambda x : x // 100).astype(int16),
+        'quantity' : data.QUANTITY.astype(int32),
+        'items' : data.ITEMS.astype(int32),
+        'net_ingredient_cost' : data.NIC.astype(float32),
+        'act_cost' : data['ACT COST'].astype(float32)
     },
     )
 
@@ -72,13 +72,13 @@ def process_zip_file(fname):
         nn = clean_data[c].isnull().sum()
         print(f'{c} : {nn}')
 
-    agg_data = clean_data.drop(clean_data.index[clean_data.msoa.isnull()]).groupby(['msoa', 'bnf_sec', 'bnf_sub_sec', 'year']).sum().reset_index()
-    return agg_data
+    return clean_data
 
     
 def process(f):
+    os.system("taskset -p 0xfffffffff %d" % os.getpid())
     try:
-        df = process_zip_file('./zip_files/' + f.name)
+        df = process_zip_file('/data/zip_files/' + f.name)
     except Exception as e:
         print(f'processing {f.name} FAILED')
         print(e)
@@ -86,13 +86,13 @@ def process(f):
 
 def main():
 
-    path = Path('./zip_files/')
+    path = Path('/data/zip_files/')
     files = (x for x in path.iterdir())
     dfs = pool(delayed(process)(f) for f in files)
 
     agg = pd.concat(dfs, ignore_index=True, copy=False)
 
-    agg.to_csv('prescribe_msoa.csv', index=False)
+    agg.to_csv('/data/prescribe_msoa.csv', index=False)
 
 
         
