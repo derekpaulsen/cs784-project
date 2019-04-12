@@ -1,0 +1,5 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/prescribe_graphs/graph.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/prescribe_graphs/graph.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv').groupby(['year', 'month', 'bnf_sec']).sum().reset_index()$/;"	v	language:Python
+sections	/home/derek/Desktop/cs784/project/pyscripts/prescribe_graphs/graph.py	/^sections = pres.bnf_sec.unique()$/;"	v	language:Python
+start_x	/home/derek/Desktop/cs784/project/pyscripts/prescribe_graphs/graph.py	/^start_x = pres.year.min()$/;"	v	language:Python

@@ -1,0 +1,75 @@
+0101010G0AAABAB - strong downward trend overall 4.5k to 2k
+
+0101010G0BBABAB - VERY sharp decline in the last couple of years
+
+0101010G0BCABAB -  humpback shape
+
+0101010J0AAAAAA - sharp decline again
+
+0101010L0BBABAA - went from 3k to 0 in a period of two years
+
+
+0101010R0AAAAAA actually increased in useage
+
+0101010R0AAABAB - again another sharp decline
+0101010R0BCAAAB - again another sharp decline
+
+
+
+
+SECTION 2
+
+
+0201010F0AAAAAA - strong downward trend
+
+0201010F0AAADAD - also downward trend 
+					VERY commonly prescribed, probably worth looking into more
+
+0201010F0AAAEAE - "" "" same as above, slightly less common though
+
+0201010F0AAAFAF - "" ""
+
+0202010B0AAABAB - "" "" 1.6M prescritions at peak
+
+0202010B0AAACAC - "" "" 50K
+
+0202010P0AAAAAA - UPWARD trend 50K to 250K
+
+0202010P0AAADAD - also up 80K to 110K
+
+0202010P0BBAAAA - weird spike
+
+0202020D0AAAEAE - up 100K to 140K
+
+0202020L0AABDBD - slightly down, 750K to 625K
+
+
+The average slope of the lines? are any medications stable?
+
+0202030S0AAATAT
+0202030S0AAAUAU - both up 
+0202030S0AAAVAV - up
+
+
+0202030X0AAAAAA
+0202030X0AAABAB - both WAY up
+
+0202040B0AAAAAA
+0202040B0AAABAB - both way down
+0202040C0AAAAAA
+0202040C0AAABAB
+
+0202040H0AAAAAA - 4K to 0
+0202040H0BBAAAA - 2K to 0
+
+0203020D0AAABAB - 45K down to 30K
+
+look at arithmiya meds LC09
+LC16 liver cirrhosis
+LC18 dementia 
+LC19 diabetes
+LC27 hypertensive diseases
+LC35 parkinsons
+LC 37 38
+
+LC41 suicide

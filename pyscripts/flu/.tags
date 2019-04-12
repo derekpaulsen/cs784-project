@@ -1,0 +1,18 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+FLU	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^FLU = 'LC28 Influenza and pneumonia'$/;"	v	language:Python
+flu_deaths	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^flu_deaths = mor[FLU] \/ pop.total * 1000$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^joined = vaccines.join(flu_deaths).join(imd)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^def process(joined, col):$/;"	f	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^vaccines = pd.read_csv('.\/flu_vaccines_msoa.csv')$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/flu/flu.py	/^vaccines = vaccines.groupby(index_cols).sum()$/;"	v	language:Python

@@ -1,0 +1,34 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+all_vars	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^all_vars = set(imd_cats + ['density','latitude'])$/;"	v	language:Python
+confouding_vars	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^        confouding_vars = all_vars - {v}$/;"	v	language:Python
+density	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^density = pd.read_csv('..\/..\/data\/msoa_norm\/pop_density_by_msoa.csv').groupby('msoa').mean()['density']$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^imd = imd.groupby('msoa').mean()$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+ITEMS	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^ITEMS = 'items'$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^j = pres.join(lat_long, how='inner')$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^j = pres.join(lat_long, how='inner').join(imd, how='inner').join(density, how='inner')$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^    joined = j.loc[m]$/;"	v	language:Python
+lat_long	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^lat_long = pd.read_csv('..\/..\/data\/msoa_norm\/lat_long_msoa.csv').set_index('msoa')$/;"	v	language:Python
+lat_long	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^lat_long = pd.read_csv('..\/..\/data\/msoa_norm\/lat_long_msoa.csv').set_index('msoa')$/;"	v	language:Python
+NORMALIZE	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^NORMALIZE = True$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').groupby('msoa').mean()$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').groupby('msoa').mean()$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^pres = pres.groupby(['msoa', 'bnf_sub_sec']).sum()$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^pres = pres.reset_index().set_index('msoa')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^pres = pres.groupby(['msoa', 'bnf_sub_sec']).sum()$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^pres = pres.reset_index().set_index('msoa')$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^def process(joined, col, independant_vars):$/;"	f	language:Python
+sections	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^sections = pres.bnf_sub_sec.unique()$/;"	v	language:Python
+sections	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^sections = pres.bnf_sub_sec.unique()$/;"	v	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/lat_long_pres/lat_vs_pres_CNS_IMD.py	/^spearman = stats.spearmanr;$/;"	v	language:Python

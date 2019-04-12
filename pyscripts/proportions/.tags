@@ -1,0 +1,12 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+ax_itr	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^    ax_itr = iter(axes)$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^df  = pd.read_csv('..\/..\/data\/summed.csv')$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^df = df.groupby(['year', 'bnf_code']).sum().reset_index().set_index('year')$/;"	v	language:Python
+items	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^        items = slc.sort_values('items', ascending=False).reset_index()['items'].head(500)$/;"	v	language:Python
+secs	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^secs = sorted(list(df.bnf_sec.unique()))$/;"	v	language:Python
+slc	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^        slc = df_sec.loc[year]$/;"	v	language:Python
+srted	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^        srted = slc.sort_values('items')$/;"	v	language:Python
+top	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^            top = srted.tail(k).sum()['items']$/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^TOPK = 5$/;"	v	language:Python
+tot	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^        tot = slc.sum().at['items']$/;"	v	language:Python
+years	/home/derek/Desktop/cs784/project/pyscripts/proportions/prop.py	/^years = list(range(2012, 2018))$/;"	v	language:Python

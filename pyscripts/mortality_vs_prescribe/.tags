@@ -1,0 +1,58 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+FLU	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^FLU = 'LC28 Influenza and pneumonia'$/;"	v	language:Python
+FLU	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^FLU = 'LC28 Influenza and pneumonia'$/;"	v	language:Python
+FLU	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^FLU = 'LC28 Influenza and pneumonia'$/;"	v	language:Python
+FLU	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^FLU = 'LC28 Influenza and pneumonia'$/;"	v	language:Python
+flu_deaths	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^flu_deaths = mor[FLU] \/ pop.total * 1000$/;"	v	language:Python
+flu_deaths	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^flu_deaths = mor[FLU] \/ pop.total * 1000$/;"	v	language:Python
+flu_deaths	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^flu_deaths = mor[FLU] \/ pop.total * 1000$/;"	v	language:Python
+flu_deaths	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^flu_deaths = mor[FLU] \/ pop.total$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^imd = imd.loc[[2010, 2015]]$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^imd = pd.read_csv('..\/..\/data\/msoa_norm\/IMD_by_msoa.csv')$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^index_cols = ['year', 'msoa']$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^joined = vaccines.join(flu_deaths).join(imd)$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^joined = vaccines.join(flu_deaths).join(imd)$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^joined = vaccines.join(flu_deaths).join(imd)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^mor = pd.read_csv('..\/..\/data\/msoa_norm\/mortality_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+nulls	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^nulls = joined.isnull().apply(lambda x :  x.any(), axis=1)$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pearson	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^pearson = stats.pearsonr$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^pop = pd.read_csv('..\/..\/data\/msoa_norm\/population_by_msoa.csv').set_index(index_cols)$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^pres = pd.read_csv('..\/..\/data\/msoa_norm\/prescribe_msoa.csv')$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+prescribe_columns	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^prescribe_columns = ['quantity','items','net_ingredient_cost','act_cost']$/;"	v	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^def process(joined, col):$/;"	f	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^def process(joined, col):$/;"	f	language:Python
+process	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^def process(joined, col):$/;"	f	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+spearman	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^spearman = stats.spearmanr;$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres.py	/^vaccines = vaccines.groupby(index_cols).sum()$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_no_iterpolated_pts.py	/^vaccines = vaccines.groupby(index_cols).sum()$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/mor_vs_pres_sec4.py	/^vaccines = vaccines.groupby(index_cols).sum()$/;"	v	language:Python
+vaccines	/home/derek/Desktop/cs784/project/pyscripts/mortality_vs_prescribe/plot.py	/^vaccines = vaccines.groupby(index_cols).sum()$/;"	v	language:Python
