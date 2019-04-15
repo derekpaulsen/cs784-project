@@ -9,6 +9,7 @@ conf = SparkConf().set("spark.driver.maxResultSize", "100G")\
                     .set('spark.driver.memory', "150G")
 
 sc = SparkContext(master = "local[*]", appName="correlations", conf=conf)
+pop = pd.read_csv('/proj/cs784-s19-PG0/outer_code_norm/population_by_outer_code.csv')
 
 df = pd.read_csv('/data/heart_outer_code.csv')
 # get all the significant codes
@@ -17,10 +18,15 @@ large_codes = set(code_sums.index[code_sums['items'] > 5000000].unique())
 df = df.loc[df.bnf_code.apply(lambda x : x in large_codes)]
 
 overall = df.groupby(['bnf_code', 'year', 'month']).sum()
+overall /= pop.groupby('year').sum()
 
 outer_codes = df.outer_code.unique()
 print(df.bnf_code.unique())
 df = df.set_index(['bnf_code','outer_code', 'year', 'month'])
+# get the avearge
+df['items'] /= pop.set_index(['outer_code', 'year']).total
+# drop the nulls
+df.drop(df.index[df['items'].isnull()], inplace=True)
 
 
 print('number of combinations', len(large_codes) * len(outer_codes))
