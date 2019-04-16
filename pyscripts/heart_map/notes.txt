@@ -1,0 +1,57 @@
+
+############################################################################################################
+0212000AAAAAAAA - downward trend, also the top result for negative correlations and 
+					pval < .001 probably a good thing to make a heatmap of
+
+					Rosuvastatin is the drug per google 
+
+					Statin
+					It can treat high cholesterol and triglyceride levels. This may reduce the risk of heart attack, stroke, and related health conditions.
+
+					AKA Crestor - yes the drug from the commercials
+
+
+############################################################################################################
+
+0206020F0AAABAB -  also downward trend second result
+
+per google 
+Felodipine (5mg)
+
+Antihypertensive drug
+
+It can treat high blood pressure, reducing the risk of stroke and heart attack.
+
+
+0206020F0AAACAC -  4th result downward trend overall 
+
+Felodipine (10mg)
+
+Antihypertensive drug
+
+It can treat high blood pressure, reducing the risk of stroke and heart attack.
+
+
+
+############################################################################################################
+
+0206020L0AAAAAA - third result upward trend overall
+
+Lercanidipine
+
+Lercanidipine is an antihypertensive drug. It belongs to the dihydropyridine class of calcium channel blockers, which work by relaxing and opening the blood vessels allowing the blood to circulate more freely around the body. This lowers the blood pressure and allows the heart to work more efficiently. Wikipedia<Paste>
+
+
+############################################################################################################
+
+
+
+0209000A0AAAJAJ - aspirin 5th result
+	
+	75mg (baby aspirin) this is used for daily dosage to reduce the risk of heart disease
+	overall downward trend 
+
+
+
+
+

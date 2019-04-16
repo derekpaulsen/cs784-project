@@ -1,4 +1,4 @@
-id,postcode,latitude,longitude
+id,outer_code,latitude,longitude
 2,AB10,57.13514,-2.11731
 3,AB11,57.13875,-2.09089
 4,AB12,57.10100,-2.11060

@@ -1,0 +1,18 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+all_outer_codes	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^all_outer_codes = df.outer_code.unique()$/;"	v	language:Python
+blur	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^                        blur=10$/;"	v	language:Python
+blur	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^                    blur=10$/;"	v	language:Python
+codes	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^codes = srted.index.tolist()$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^df = pd.read_csv('res.csv')$/;"	v	language:Python
+hmap	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^    hmap = folium.Map(location=[52.5, -2], zoom_start=7.5)$/;"	v	language:Python
+hmap	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^hmap = folium.Map(location=[52.5, -2], zoom_start=7.5)$/;"	v	language:Python
+hm_pts	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^    hm_pts = HeatMap(list(zip(j.latitude.values, j.longitude.values, np.abs(j.rs.values))),$/;"	v	language:Python
+hm_pts	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^hm_pts = HeatMap(list(zip(lat_long.latitude.values, lat_long.longitude.values, np.ones(len(lat_long)))),$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^    j = slc.join(lat_long)$/;"	v	language:Python
+lat_long	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^lat_long =  pd.read_csv('..\/..\/data\/lat_long\/outer_codes_lat_long.csv').set_index('outer_code')$/;"	v	language:Python
+lat_long	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^lat_long = lat_long.loc[all_outer_codes, : ]$/;"	v	language:Python
+neg_corrs	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^neg_corrs = df.loc[(df.rs < -.10) & (df.pval < .001)]$/;"	v	language:Python
+radius	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^                        radius=10,$/;"	v	language:Python
+radius	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^                    radius=10,$/;"	v	language:Python
+srted	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^srted =neg_corrs.bnf_code.value_counts().sort_values().tail(TOPK) $/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/pyscripts/heart_map/heart_map.py	/^TOPK = 10$/;"	v	language:Python
