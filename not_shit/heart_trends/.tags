@@ -1,0 +1,11 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+cnt	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^cnt = 0$/;"	v	language:Python
+code_sums	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^code_sums = df.groupby('bnf_code').sum()$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = df.loc[df.bnf_code.apply(lambda x : x in large_codes)]$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = df.set_index(['bnf_code','outer_code', 'year', 'month'])$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = pd.read_csv('..\/..\/data\/heart_outer_code.csv')$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^        j = overall.loc[bc].join(df.loc[(bc, oc, slice(None), slice(None)), :], how='inner', rsuffix='_r', lsuffix='_l')$/;"	v	language:Python
+large_codes	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^large_codes = set(code_sums.index[code_sums['items'] > 5000000].unique())$/;"	v	language:Python
+outer_codes	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^outer_codes = df.outer_code.unique()$/;"	v	language:Python
+overall	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^overall = df.groupby(['bnf_code', 'year', 'month']).sum()$/;"	v	language:Python
+res	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^res = []$/;"	v	language:Python
