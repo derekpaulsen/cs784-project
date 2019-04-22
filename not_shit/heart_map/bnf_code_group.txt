@@ -1,7 +1,5 @@
-
-
 Irbesartan
-0212000AAAAAAAA
+0212000AAAAAAAA (1)
 0205052I0AAACAC
 
 Antihypertensive drug
@@ -13,7 +11,7 @@ Drug class: Angiotensin II receptor blocker
 
 
 Lercanidipine
-0206020L0AAAAAA
+0206020L0AAAAAA (2)
 
 Lercanidipine is an antihypertensive drug. It belongs to the dihydropyridine
 class of calcium channel blockers, which work by relaxing and opening the blood
@@ -23,8 +21,8 @@ lowers the blood pressure and allows the heart to work more efficiently
 
 
 Felodipine
-0206020F0AAABAB
-0206020F0AAACAC
+0206020F0AAABAB (3)
+0206020F0AAACAC (5)
 
 Antihypertensive drug
 It can treat high blood pressure, reducing the risk of stroke and heart attack.
@@ -33,7 +31,7 @@ Drug class: Channel blocker
 
 
 Isosorbide Mononitrate
-0206010K0AAAEAE
+0206010K0AAAEAE (4)
 
 Isosorbide mononitrate, sold under many brand names, is a medication used for
 heart related chest pain, heart failure, and esophageal spasms. It can be used

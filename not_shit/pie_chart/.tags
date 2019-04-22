@@ -1,0 +1,6 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+mor	/home/derek/Desktop/cs784/project/not_shit/pie_chart/pie_chart.py	/^mor = pd.read_csv('..\/..\/data\/outer_code_norm\/mortality_by_outer_code.csv')$/;"	v	language:Python
+pie_chart	/home/derek/Desktop/cs784/project/not_shit/pie_chart/pie_chart.py	/^def pie_chart():$/;"	f	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/pie_chart/pie_chart.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv')$/;"	v	language:Python
+slices	/home/derek/Desktop/cs784/project/not_shit/pie_chart/pie_chart.py	/^slices = {$/;"	v	language:Python
+time_series	/home/derek/Desktop/cs784/project/not_shit/pie_chart/pie_chart.py	/^def time_series():$/;"	f	language:Python

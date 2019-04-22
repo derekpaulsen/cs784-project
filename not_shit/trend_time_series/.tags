@@ -1,0 +1,20 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+bnf_codes	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^bnf_codes = [$/;"	v	language:Python
+get_outer_code_slices	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^def get_outer_code_slices():$/;"	f	language:Python
+index_cols	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^index_cols = ['bnf_code', 'year', 'month']$/;"	v	language:Python
+outer_codes	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^outer_codes = set()$/;"	v	language:Python
+outer_code_slcs	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^outer_code_slcs = get_outer_code_slices()$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^                .set_index(['outer_code', 'year'])['total']$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^pres = pd.read_csv('..\/..\/data\/slices\/heart\/heart_outer_code.csv')$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^pres = pres.loc[pres.bnf_code.apply(lambda x :  x in bnf_codes) & pres.outer_code.apply(lambda x : x in outer_codes)]$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^pres = pres.reset_index().set_index(['bnf_code', 'outer_code'])$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^pres = pres.set_index(['outer_code', 'year']).join(pop, how='inner')$/;"	v	language:Python
+PVAL_THRES	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^PVAL_THRES = .001$/;"	v	language:Python
+R_THRES	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^R_THRES = -.40$/;"	v	language:Python
+slc	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^        slc = pres.loc[(bc, oc), : ].sort_values('x')$/;"	v	language:Python
+summed	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^summed = pd.read_csv('..\/..\/data\/slices\/heart\/summed_heart.csv')$/;"	v	language:Python
+summed	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^summed = summed.loc[summed.bnf_code.apply(lambda x :  x in bnf_codes)]$/;"	v	language:Python
+summed	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^summed = summed.reset_index().set_index('bnf_code')$/;"	v	language:Python
+summed	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^summed = summed.set_index('year').join(pop.reset_index().groupby('year').sum())$/;"	v	language:Python
+summed_slc	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^    summed_slc = summed.loc[bc].sort_values('x')$/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/not_shit/trend_time_series/plot_time_series.py	/^TOPK = 5$/;"	v	language:Python

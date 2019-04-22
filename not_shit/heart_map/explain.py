@@ -1,6 +1,6 @@
 import pandas as pd
 from scipy.stats import pearsonr, spearmanr
-import matplotlib.pyplot as plt
+from sklearn import linear_model
 
 
 mortality_cols = [
@@ -9,7 +9,10 @@ mortality_cols = [
 ]
 
     
-TOPK = 10
+TOPK = 5
+R_THRES = -.20
+PVAL_THRES = .001
+
 index_cols = ['outer_code', 'year']
 
 indep_vars = [
@@ -54,7 +57,7 @@ imd.drop(imd.index[imd.apply(lambda x : any(x.isnull()), axis=1)], inplace=True)
 
 
 # all the data pts that don't follow the national trend
-neg_corrs = corrs.loc[(corrs.rs < -.10) & (corrs.pval < .001)]
+neg_corrs = corrs.loc[(corrs.rs < R_THRES) & (corrs.pval < PVAL_THRES)]
 
 print(neg_corrs.bnf_code.value_counts().sort_values().tail(TOPK))
 srted =neg_corrs.bnf_code.value_counts().sort_values().tail(TOPK) 
@@ -83,5 +86,23 @@ for code in codes:
         sp, sp_pval = spearmanr(slc['items'], slc[v])
         pear, pear_pval = pearsonr(slc['items'], slc[v])
         print(f'{v} : spearman = ({sp}, {sp_pval}), pearson = ({pear}, {pear_pval})\n')
-        
-    print('\n\n')
+
+        confounding_vars = list(set(indep_vars) - {v})
+
+        lm = linear_model.LinearRegression()
+        lm.fit(joined[v].values.reshape(-1,1), joined['items'])
+        rs = lm.score(joined[v].values.reshape(-1,1), joined['items'])
+        print(f'coef WITHOUT IMD = {str(lm.coef_)}')
+        print(f'R^2 = {rs}')
+        print()
+        lm = linear_model.LinearRegression()
+
+        all_cols = [v] + confounding_vars
+        lm.fit(joined[all_cols], joined['items'])
+        rs = lm.score(joined[all_cols], joined['items'])
+        print('\n+ '.join([f'{c} * {x}' for c,x in zip(lm.coef_, all_cols)]))
+        print(f'R^2 = {rs}')
+        print('\n\n')
+
+            
+        print('\n\n')
