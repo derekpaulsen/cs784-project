@@ -2,7 +2,7 @@
 dax2	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^dax2 = dax.twinx()$/;"	v	language:Python
 death_color	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^death_color= 'tab:red'$/;"	v	language:Python
 demi	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^                .reset_index()$/;"	v	language:Python
-demi	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^demi = demi.loc[(demi.year >= 2013) & (demi.x <= 2016)]$/;"	v	language:Python
+demi	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^demi = demi.loc[(demi.x >= 2013) & (demi.x <= 2016)]$/;"	v	language:Python
 drug_color	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^drug_color = 'tab:blue'$/;"	v	language:Python
 hax2	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^hax2 = hax.twinx()$/;"	v	language:Python
 heart	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^                .reset_index()$/;"	v	language:Python

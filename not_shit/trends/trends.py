@@ -23,9 +23,10 @@ death_color= 'tab:red'
 demi['items'] /= demi.total
 demi['x'] = demi['year'] + (demi['month'] - 1) / 12
 
-demi = demi.loc[(demi.year >= 2013) & (demi.x <= 2016)]
+demi = demi.loc[(demi.x >= 2013) & (demi.x <= 2016)]
 
 dfig, dax = plt.subplots()
+dax.set_title('Dementia')
 
 dax.plot(demi['x'].values, demi['items'].values, label='Prescriptions', color='tab:blue')
 dax.set_ylabel('Items per Person', color=drug_color)
@@ -45,7 +46,7 @@ dax.set_xlim((2013, 2016))
 dax.set_xticks(list(range(2013, 2017)))
 dax.set_xlabel('Year')
 
-
+dfig.tight_layout()
 
 heart_related = [
    'LC24 Heart failure and complications and ill-defined heart disease',
@@ -74,15 +75,13 @@ heart = heart.loc[(heart.year >= 2013) & (heart.x <= 2016)]
 
 
 
-
-
 hfig, hax = plt.subplots()
 
+hax.set_title('Heart Related')
 
 hax.plot(heart['x'].values, heart['items'].values, label='Prescriptions', color=drug_color)
 hax.set_ylabel('Items per Person', color=drug_color)
 hax.tick_params(axis='y', labelcolor=drug_color)
-
 
 
 hax2 = hax.twinx()
@@ -100,36 +99,12 @@ hax.set_xticks(list(range(2013, 2017)))
 hax.set_xlabel('Year')
 
 
-
-
-
-
 dfig.tight_layout()
+hfig.tight_layout()
+
+dfig.savefig('../figures/dementia_death_vs_drugs.png')
+hfig.savefig('../figures/heart_death_vs_drugs.png')
+
 plt.show()
-
-
-
-
-#demi['items'].plot()
-
-
-
-
-
-
-
-
-
-
-
-#over_45  = (pop['45-64'] + pop['65+']) / pop.total
-#over_45.plot()
-#plt.show()
-#
-#(pop['65+'] / pop.total).plot(label='65+')
-#(pop['45-64'] / pop.total).plot(label='45-64')
-#(pop['30-44'] / pop.total).plot(label='30-44')
-#plt.legend()
-#plt.show()
 
 
