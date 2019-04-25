@@ -1,0 +1,18 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+density	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^density = pd.read_csv('..\/..\/data\/outer_code_norm\/pop_density_by_outer_code.csv').set_index(index_cols)$/;"	v	language:Python
+heart_rel	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^heart_rel = [$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^imd = imd.set_index(index_cols + ['category']).unstack(['category'])$/;"	v	language:Python
+imd	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^imd = pd.read_csv('..\/..\/data\/outer_code_norm\/IMD_by_outer_code.csv')$/;"	v	language:Python
+imd_cats	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^imd_cats = imd.category.unique().tolist()$/;"	v	language:Python
+indep_vars	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^indep_vars = [$/;"	v	language:Python
+index_cols	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^index_cols = ['outer_code', 'year']$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^                .join(mor, how='inner')$/;"	v	language:Python
+joined	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^joined = joined.reset_index()$/;"	v	language:Python
+lat_long	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^lat_long =  pd.read_csv('..\/..\/data\/lat_long\/outer_codes_lat_long.csv').set_index('outer_code')$/;"	v	language:Python
+mor	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^mor = pd.read_csv('..\/..\/data\/outer_code_norm\/mortality_by_outer_code.csv').set_index(index_cols)[heart_rel]$/;"	v	language:Python
+mortality_cols	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^mortality_cols = [$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv').set_index(index_cols)$/;"	v	language:Python
+PVAL_THRES	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^PVAL_THRES = .001$/;"	v	language:Python
+res	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^res = {}$/;"	v	language:Python
+R_THRES	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^R_THRES = -.20$/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/not_shit/confounding/independant_var_corrs.py	/^TOPK = 5$/;"	v	language:Python

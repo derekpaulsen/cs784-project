@@ -1,4 +1,16 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 all_drugs	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^def all_drugs():$/;"	f	language:Python
+fitted	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^def fitted():$/;"	f	language:Python
+j	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^            .join(pop)$/;"	v	language:Python
+most_pres	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^                .index$/;"	v	language:Python
+most_pres	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^most_pres = list(reversed(list(most_pres)))$/;"	v	language:Python
+no_outliers	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^        no_outliers = slc.drop(slc.index[((slc - slc.mean()) \/ slc.std()).apply(lambda x : abs(x) > 3)])$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv')$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^pop = pop.groupby(['year', 'outer_code']).sum()$/;"	v	language:Python
+power_law	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^def power_law(x, a, b):$/;"	f	language:Python
 pres	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^pres = pd.read_csv('..\/..\/data\/slices\/heart\/summed_heart.csv')$/;"	v	language:Python
-TOPK	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^TOPK = 100$/;"	v	language:Python
+pres	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^            .groupby(['year', 'outer_code', 'bnf_code']).sum()$/;"	v	language:Python
+slc	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^        slc = j.loc[(year, slice(None), code), 'items']$/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^TOPK = 200$/;"	v	language:Python
+TOPK	/home/derek/Desktop/cs784/project/not_shit/drug_dist/rate_dist.py	/^TOPK = 10$/;"	v	language:Python
+YEAR	/home/derek/Desktop/cs784/project/not_shit/drug_dist/drug_dist.py	/^YEAR = 2015$/;"	v	language:Python

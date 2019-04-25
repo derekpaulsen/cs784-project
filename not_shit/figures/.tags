@@ -4,6 +4,7 @@ BLUR	/home/derek/Desktop/cs784/project/not_shit/figures/prescribe_rate_heat_map.
 code	/home/derek/Desktop/cs784/project/not_shit/figures/prescribe_rate_heat_map.py	/^code = '0212000AAAAAAAA'$/;"	v	language:Python
 codes	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^codes = max_std.index.tolist() + min_std.index.tolist()$/;"	v	language:Python
 codes	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^codes = min_mu.index.tolist()$/;"	v	language:Python
+codes	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^codes = most_prescribed$/;"	v	language:Python
 corrs	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^corrs = corrs.set_index('bnf_code')$/;"	v	language:Python
 corrs	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^corrs = pd.read_csv('..\/heart_map\/res.csv')$/;"	v	language:Python
 corrs	/home/derek/Desktop/cs784/project/not_shit/figures/normal_test.py	/^corrs = corrs.set_index('bnf_code')$/;"	v	language:Python
@@ -37,6 +38,7 @@ mor	/home/derek/Desktop/cs784/project/not_shit/figures/independant_var_corrs.py	
 mortality_cols	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^mortality_cols = [$/;"	v	language:Python
 mortality_cols	/home/derek/Desktop/cs784/project/not_shit/figures/independant_var_corrs.py	/^mortality_cols = [$/;"	v	language:Python
 mortality_cols	/home/derek/Desktop/cs784/project/not_shit/figures/normal_test.py	/^mortality_cols = [$/;"	v	language:Python
+most_prescribed	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^most_prescribed = ['0212000Y0AAADAD', '0209000A0AAABAB', '0206020A0AAAAAA', '0202010B0AAABAB', '0212000Y0AAABAB', '0205051R0AAADAD', '0206020A0AAABAB', '0212000B0AAABAB', '0202020L0AABDBD', '0212000B0AAACAC']$/;"	v	language:Python
 mu_sig	/home/derek/Desktop/cs784/project/not_shit/figures/corrleation_dist.py	/^mu_sig = corrs.groupby('bnf_code').apply(lambda x : pd.Series({'mu' : x.rs.mean(), 'std' : x.rs.std()}))$/;"	v	language:Python
 pairs	/home/derek/Desktop/cs784/project/not_shit/figures/independant_var_corrs.py	/^pairs = [t for t in product(indep_vars, indep_vars) if t[0] < t[1]]$/;"	v	language:Python
 pop	/home/derek/Desktop/cs784/project/not_shit/figures/independant_var_corrs.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv').set_index(index_cols)$/;"	v	language:Python

@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Motivation}{}% 2
+\BOOKMARK [1][-]{section.3}{Related Work}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{SparkSQL ref:SparkSQL}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Coarsened Exact Matching \040ref:CEM}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{ZaliQL ref:ZaliQL}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Data}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Sources}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Preprocessing}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Methods}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Identifying interactions of interest}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Controlling for Confounding Variables}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Results}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Distribution of Drugs}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{General Trends}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Per drug trends}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.4}{Causal Inference}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.5}{Confounding Variables and Correlations}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Data Cleaning and Preprocessing}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Rigorous Casual Inference}{section.7}% 21

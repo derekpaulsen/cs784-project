@@ -1,0 +1,13 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+df	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^df = pd.read_csv('..\/..\/data\/slices\/heart\/summed_heart.csv').set_index('year')$/;"	v	language:Python
+fitted	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^fitted = pd.Series(inv_power(xvals, *popt))$/;"	v	language:Python
+fitted	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^fitted = pd.Series(inv_power(xvals, *popt))$/;"	v	language:Python
+heart_slc	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^heart_slc = df.loc[df.bnf_code.apply(lambda x : str(x)[:2] == '02')].loc[YEAR]$/;"	v	language:Python
+NPTS	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^NPTS = 400$/;"	v	language:Python
+power_law	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^def power_law(x, a, b):$/;"	f	language:Python
+slc	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^slc = df.loc[YEAR]$/;"	v	language:Python
+srted	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^srted = heart_slc['items'].sort_values(ascending=False).reset_index(drop=True).head(NPTS)$/;"	v	language:Python
+srted	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^srted = slc['items'].sort_values(ascending=False).reset_index(drop=True).head(NPTS)$/;"	v	language:Python
+xvals	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^xvals = srted.index.values + 1$/;"	v	language:Python
+xvals	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^xvals = srted.index.values + 1$/;"	v	language:Python
+YEAR	/home/derek/Desktop/cs784/project/not_shit/zipf/zipfian.py	/^YEAR = 2012$/;"	v	language:Python

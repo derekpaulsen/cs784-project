@@ -9,7 +9,9 @@ mortality_cols = [
     'LC27 Hypertensive diseases'
 ]
 
-    
+ 
+most_prescribed = ['0212000Y0AAADAD', '0209000A0AAABAB', '0206020A0AAAAAA', '0202010B0AAABAB', '0212000Y0AAABAB', '0205051R0AAADAD', '0206020A0AAABAB', '0212000B0AAABAB', '0202020L0AABDBD', '0212000B0AAACAC']
+
 TOPK = 5
 R_THRES = -.20
 PVAL_THRES = .001
@@ -79,11 +81,11 @@ max_std = mu_sig.sort_values('std').tail(TOPK)
 min_std = mu_sig.sort_values('std').head(TOPK)
 
 codes = max_std.index.tolist() + min_std.index.tolist()
-
+codes = most_prescribed
 for c in codes:
-    corrs.loc[c].rs.hist(bins=50)
+    corrs.loc[c].rs.hist(bins=50, histtype='step', density=True)
     plt.title(c)
-    plt.show()
+plt.show()
 
 
     
