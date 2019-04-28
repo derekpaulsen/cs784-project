@@ -46,6 +46,7 @@ def all_drugs():
     fig.tight_layout()
 
     fig.savefig('../pres/figures/drug_dist.png')
+    fig.savefig('../figures/drug_dist.png')
 
 
 def power_law(x, a, b):
@@ -105,13 +106,13 @@ def fitted():
     heart_ax.legend()
     #heart_ax.set_yticks(y_ticks)
     
-    heart_res = heart_slc['items'] - fitted
     fig, ax = plt.subplots()
     res.hist(ax=ax,bins=50)
         
     fig.tight_layout()
 
     fig.savefig('../pres/figures/drug_dist_fitted.png')
+    fig.savefig('../figures/drug_dist_fitted.png')
     
 
 all_drugs()

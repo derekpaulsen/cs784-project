@@ -13,3 +13,5 @@ mor	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^mor = mor.join
 mor	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^mor = pd.read_csv('..\/..\/data\/outer_code_norm\/mortality_by_outer_code.csv').groupby('year').sum()$/;"	v	language:Python
 pop	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv').groupby('year').sum()$/;"	v	language:Python
 pres	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^pres = pd.read_csv('..\/..\/data\/slices\/heart\/summed_heart.csv')$/;"	v	language:Python
+tots	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^            .reset_index()$/;"	v	language:Python
+tots	/home/derek/Desktop/cs784/project/not_shit/trends/trends.py	/^tots = tots.loc[(tots.x >= 2011) & (tots.x <= 2017)]$/;"	v	language:Python

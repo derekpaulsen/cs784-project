@@ -98,13 +98,20 @@
 
 
 
-	%TODO need to add some references to controling for counfounding variables with MLR
 	% TODO add something about multiple hypothesis testing and the problems in data science with it
 	\subsection{ZaliQL~\cite{ref:ZaliQL}}
 		ZaliQL is a framework for doing causal inference on large observational datasets using PostgreSQL. To do this, they 
 		apply fuzzy matching between the control and treatment datasets using possible confounding variables 
 		and then do casual inference. The contribution of this paper is that this procedure (which is very common in statistical anaylsis)
 		is implemented as a PostgreSQL package allowing it to scale to billions of observations.
+	
+	\subsection{Controlling for Confounding Variables ~\cite{ref:LinReg}}
+		This article outlines the basic ways which are used to control for confounding variables.
+		The article gives brief summary of stratification methods (such as CEM) and multivariate models,
+		including logistic regression, multiple linear regression, and analysis of covariance.
+		Since we are attempting to find causal relationships between continuous variables, we 
+		are particularity interested in using multiple linear regression analysis.
+		
 
 \section{Data}
 	\subsection{Sources}
@@ -122,24 +129,29 @@
 			\item Have geographic granularity which can be normalized and linked with the prescribing data
 		\end{itemize}
 
-		Applying this criteria (and a lot of googling and coffee) we extracted the datasets in table %XXX add ref here
+		Applying this criteria (and a lot of googling and coffee) we extracted the datasets in table \ref{dataset_table}
 		% FIXME add the sources
 		% FIXME also make this such that it spans the entire two columns look it up i haven't a clue
-	%	\begin{tabular}{|l|l|l|c|}
-	%		\hline
-	%		Name & Schema & Source & Size \\
-	%		\hline
-	%		Prescribing & (Year, Month, BNF Code, Postcode District, Items, Quantity, Account Cost, Net Ingredient Cost) & TODO & 33GB\\
-	%		\hline 
-	%		Mortality & (Year, Cause, Postcode District, Number of Deaths) & TODO & 1MB \\
-	%		\hline
-	%		Indexes of Deprivation & (Year, Postcode District, Category, Value) & TODO & 2.1MB \\
-	%		\hline
-	%		Population & (Year, Postcode District, Age 0-15, Age 16-29, Age 30-44, Age 45-64, Age 65+, Total, Area, Density) & TODO & 1MB\\
-	%		\hline
-	%		Coordinates & (Postcode District, Latitude, Longitude) & TODO & 83KB \\
-	%		\hline
-	%	\end{tabular}
+		\begin{table*}
+		\scriptsize
+		\begin{tabular}{|l|l|l|c|}
+			\hline
+			Name & Schema & Size \\
+			\hline
+			Prescribing & (District, Year, Month, BNF Code,  Items, Quantity, Account Cost, Net Ingredient Cost) & 33GB\\
+			\hline 
+			Mortality & (District, Year, Cause, Number of Deaths) & 1MB \\
+			\hline
+			Indexes of Deprivation & (District, Year,  Category, Value) &  2.1MB \\
+			\hline
+			Population & (District, Year,  Age 0-15, Age 16-29, Age 30-44, Age 45-64, Age 65+, Total, Area, Density) & 1MB\\
+			\hline
+			Coordinates & (District, Latitude, Longitude) & 83KB \\
+			\hline
+		\end{tabular}
+		\caption{Tables after preprocessing}
+		\label{dataset_table}
+		\end{table*}
 
 
 
@@ -180,7 +192,7 @@
 
 		% 
 		Even with our fairly limited datasets, there is a huge number of different directions to 
-		look for interactions. Performing in depth analysis of all possible interactions computationally 
+		look for interactions and relationships. Performing in depth analysis of all possible interactions computationally 
 		would be difficult and completely infeasible in terms of human effort. Not to mention the possible 
 		issues with statistical validity of testing massive numbers of hypotheses. To address this challenge
 		we applied a few techniques to try to reduce our search space and computational complexity. First,
@@ -221,7 +233,7 @@
 		method that we looked at was Coarsened Exact Matching (CEM). CEM is a way of stratifying 
 		data into groups such that comparisons within groups account for the potential confounding 
 		variables. For continuous variables (which all of our data is) CEM requires that the 
-		confounding variables be descritized and to do the grouping. Various methods
+		confounding variables be stratified and to do the grouping. Various methods
 		exist for doing so include 
 		%FIXME  add some of the methods from the CEM paper and then 
 		. We found that our data made doing this procedure difficult for a few reasons. First,
@@ -276,19 +288,40 @@
 
 	\subsection{General Trends}
 		Next we looked at the overall trends in drug prescribing over time. We again 
-		start by looking at the prescribing rate of all drugs. 
-		% TODO add fig
+		start by looking at the prescribing rate of all drugs, which is shown in figure \ref{all_drugs_basic}.
+		Here we observed a very clear increasing trends in the number of drugs being prescribed.
 
-		Here we see a very clear increasing trends in the number of drugs being prescribed.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{../figures/all_drugs_basic.pdf}  
+	\caption{Prescribing rate of all drugs over time}
+	\label{all_drugs_basic}
+\end{figure}
+		
 
 
 		Next we looked at the drug prescribing trends for heart medications. 
 
-		%TODO add fig
-		No surprise here, it roughly follows the overall trend. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{../figures/basic_heart_trend.pdf}  
+	\caption{Prescribing rate of heart medications over time}
+	\label{heart_meds_basic}
+\end{figure}
 
+		No surprise here, it roughly follows the overall trend. 
 		We then wondered how this might compare to the trends in mortality from 
 		heart related causes. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{../figures/heart_death_vs_drugs.pdf}  
+	\caption{Prescribing rate of heart medications and deaths per 10,000 people}
+	\label{heart_death_vs_drugs}
+\end{figure}
+
 
 		We were quite surprised to find that there was a \emph{decreasing} number of 
 		heart related deaths overall. This contrasts quite a bit to previous observations
@@ -296,6 +329,15 @@
 		for there to be a positive correlation between the number of drugs prescribed to 
 		treat a illness and the number of deaths from that illness. For example, 
 		we observed this trend in drugs used to treat dementia.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{../figures/dementia_death_vs_drugs.pdf}  
+	\caption{Prescribing rate of dementia drugs and deaths per 10,000 people}
+	\label{deme_death_vs_drugs}
+\end{figure}
+
 
 
 		%TODO look at this compared to the population over 45 or so overtime 
@@ -409,36 +451,38 @@
 
 
 
-		\begin{table*}[!htpb]
-		\scriptsize
-			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-				\hline
-				& heart\_related & crime & employment & health & housing & income & density & latitude & over\_65 & over\_45\\
-				\hline
-				heart\_related& 1.000& -0.191& -0.076& -0.050& 0.110& -0.121& -0.160& -0.055& 0.259& 0.239\\ 
-				\hline
-				crime& -0.191& 1.000& \textbf{0.641}& 0.595& 0.007& \textbf{0.761}& 0.598& 0.030& \textbf{-0.660}& \textbf{-0.701}\\ 
-				\hline
-				employment& -0.076& \textbf{0.641}& 1.000& \textbf{0.897}& -0.119& \textbf{0.898}& 0.259& 0.209& -0.268& -0.307\\ 
-				\hline
-				health& -0.050& 0.595& \textbf{0.897}& 1.000& -0.170& \textbf{0.820}& 0.262& 0.260& -0.282& -0.332\\ 
-				\hline
-				housing& 0.110& 0.007& -0.119& -0.170& 1.000& 0.108& 0.253& -0.201& -0.119& -0.145\\ 
-				\hline
-				income& -0.121& \textbf{0.761}& \textbf{0.898}& \textbf{0.820}& 0.108& 1.000& 0.537& 0.132& -0.530& -0.592\\ 
-				\hline
-				density& -0.160& 0.598& 0.259& 0.262& 0.253& 0.537& 1.000& -0.057& \textbf{-0.626}& \textbf{-0.684}\\ 
-				\hline
-				latitude& -0.055& 0.030& 0.209& 0.260& -0.201& 0.132& -0.057& 1.000& 0.012& 0.015\\ 
-				\hline
-				over\_65& 0.259& \textbf{-0.660}& -0.268& -0.282& -0.119& -0.530& \textbf{-0.626}& 0.012& 1.000& \textbf{0.962}\\ 
-				\hline
-				over\_45& 0.239&\textbf{-0.701}& -0.307& -0.332& -0.145& -0.592&  \textbf{-0.684}& 0.015& \textbf{0.962}& 1.000\\ 
-				\hline
-			\end{tabular}
-		\caption{The pearson's correaltion coefficient's between the independent variables}
-		\label{corr_table}
-		\end{table*}
+\begin{table*}[!htpb]
+\scriptsize
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		&
+		heart\_related & crime & employment & health & housing & income & density & latitude & over\_65 & over\_45\\
+		\hline
+		heart\_related& 1.000& -0.264& -0.084& -0.072& -0.017*& -0.176& -0.308& -0.006*& 0.388& 0.389\\ 
+		\hline
+		crime& -0.264& 1.000& \textbf{0.659}& \textbf{0.609}& -0.041*& \textbf{0.784}& \textbf{0.731}& 0.069& \textbf{-0.691}& \textbf{-0.724}\\ 
+		\hline
+		employment& -0.084& \textbf{0.659}& 1.000& \textbf{0.924}& -0.158& \textbf{0.932}& 0.415& 0.347& -0.309& -0.345\\ 
+		\hline
+		health& -0.072& \textbf{0.609}& \textbf{0.924}& 1.000& -0.210& \textbf{0.872}& 0.406& 0.460& -0.317& -0.350\\ 
+		\hline
+		housing& -0.017*& -0.041*& -0.158& -0.210& 1.000& -0.021*& -0.116& -0.365& -0.068& -0.053\\ 
+		\hline
+		income& -0.176& \textbf{0.784}& \textbf{0.932}& \textbf{0.872}& -0.021*& 1.000& 0.592& 0.242& -0.531& -0.570\\ 
+		\hline
+		density& -0.308& \textbf{0.731}& 0.415& 0.406& -0.116& 0.592& 1.000& -0.032*& \textbf{-0.728}& \textbf{-0.777}\\ 
+		\hline
+		latitude& -0.006*& 0.069& 0.347& 0.460& -0.365& 0.242& -0.032*& 1.000& -0.040*& -0.015*\\ 
+		\hline
+		over\_65& 0.388& \textbf{-0.691}& -0.309& -0.317& -0.068& -0.531& \textbf{-0.728}& -0.040*& 1.000& \textbf{0.973}\\ 
+		\hline
+		over\_45& 0.389& \textbf{-0.724}& -0.345& -0.350& -0.053& -0.570& \textbf{-0.777}& -0.015*& \textbf{0.973}& 1.000\\ 
+		\hline
+	\end{tabular}
+\caption{The Spearman rank correlation coefficients between the independent variables. \\
+	* indicates the p-value $>$ .001}
+\label{corr_table}
+\end{table*}
 
 \end{document}
 

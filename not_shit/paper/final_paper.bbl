@@ -153,6 +153,50 @@
       \verb https://www.cambridge.org/core/journals/political-analysis/article/causal-inference-without-balance-checking-coarsened-exact-matching/5ABCF5B3FC3089A87FD59CECBB3465C0
       \endverb
     \endentry
+    \entry{ref:LinReg}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2e90f76a171e7951234c658512ffd425}{%
+           family={Pourhoseingholi},
+           familyi={P\bibinitperiod},
+           given={Mohamad\bibnamedelima Amin},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8ea5d1ca15b834061300d541834c45c1}{%
+           family={Baghestani},
+           familyi={B\bibinitperiod},
+           given={Ahmad\bibnamedelima Reza},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2528865e848823525cbcdaf5dc5abe6b}{%
+           family={Vahedi},
+           familyi={V\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PubMed}%
+      }
+      \strng{namehash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \strng{fullhash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \strng{bibnamehash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \strng{authorbibnamehash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \strng{authornamehash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \strng{authorfullhash}{c95fd1470a82ca41562d22a0a83bedb9}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Gastroenterol Hepatol Bed Bench}
+      \field{isbn}{978-1-4503-2758-9}
+      \field{title}{How to control confounding effects by statistical analysis}
+      \field{year}{2012}
+      \field{pages}{79\bibrangedash 83}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4017459
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4017459
+      \endverb
+    \endentry
     \entry{ref:ZaliQL}{article}{}
       \name{author}{4}{}{%
         {{hash=866f58f5d1eeb1664972e51e9fa9671a}{%

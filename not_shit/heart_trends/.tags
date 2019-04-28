@@ -1,25 +1,31 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+cnt	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^cnt = 0$/;"	v	language:Python
 cnt	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^cnt = 0$/;"	v	language:Python
+code_sums	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^code_sums = df.groupby('bnf_code').sum()$/;"	v	language:Python
 code_sums	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^code_sums = df.groupby('bnf_code').sum()$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^df = df.loc[df.bnf_code.apply(lambda x : x in large_codes)]$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^df = df.reset_index().set_index(['bnf_code','outer_code', 'year', 'month'])$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^df = df.set_index(['outer_code', 'year']).join(pop.set_index(['outer_code', 'year']))$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^df = pd.read_csv('..\/..\/data\/slices\/heart\/heart_outer_code.csv')$/;"	v	language:Python
 df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = df.loc[df.bnf_code.apply(lambda x : x in large_codes)]$/;"	v	language:Python
 df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = df.set_index(['bnf_code','outer_code', 'year', 'month'])$/;"	v	language:Python
 df	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^df = pd.read_csv('..\/..\/data\/heart_outer_code.csv')$/;"	v	language:Python
 heart_meds	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^                    .join(pop.groupby('year').sum(), how='inner')$/;"	v	language:Python
 heart_meds	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^heart_meds = heart_meds.reset_index()$/;"	v	language:Python
-j	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^            .join(pop)$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^            j = overall.loc[bc].join(df.loc[(bc, oc, slice(None), slice(None)), :], how='inner', rsuffix='_r', lsuffix='_l')$/;"	v	language:Python
 j	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^        j = overall.loc[bc].join(df.loc[(bc, oc, slice(None), slice(None)), :], how='inner', rsuffix='_r', lsuffix='_l')$/;"	v	language:Python
+large_codes	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^large_codes = set(code_sums.sort_values('items', ascending=False).head(10).index.values)$/;"	v	language:Python
 large_codes	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^large_codes = set(code_sums.index[code_sums['items'] > 5000000].unique())$/;"	v	language:Python
 mor	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^mor = pd.read_csv('..\/..\/data\/outer_code_norm\/mortality_by_outer_code.csv')$/;"	v	language:Python
-most_pres	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^                .index$/;"	v	language:Python
-most_pres	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^most_pres = list(reversed(list(most_pres)))$/;"	v	language:Python
+outer_codes	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^outer_codes = df.outer_code.unique()$/;"	v	language:Python
 outer_codes	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^outer_codes = df.outer_code.unique()$/;"	v	language:Python
+overall	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^overall = df.groupby(['bnf_code', 'year', 'month']).sum().reset_index().set_index('year')$/;"	v	language:Python
+overall	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^overall = overall.join(pop.groupby('year').sum())$/;"	v	language:Python
+overall	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^overall = overall.reset_index().set_index(['bnf_code', 'year', 'month'])$/;"	v	language:Python
 overall	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^overall = df.groupby(['bnf_code', 'year', 'month']).sum()$/;"	v	language:Python
+pop	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv')$/;"	v	language:Python
 pop	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv')$/;"	v	language:Python
-pop	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^pop = pd.read_csv('..\/..\/data\/outer_code_norm\/population_by_outer_code.csv')$/;"	v	language:Python
-pop	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^pop = pop.groupby(['year', 'outer_code']).sum()$/;"	v	language:Python
 pres	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^pres = pd.read_csv('..\/..\/data\/slices\/heart\/summed_heart.csv')$/;"	v	language:Python
-pres	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^            .groupby(['year', 'outer_code', 'bnf_code']).sum()$/;"	v	language:Python
+res	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart.py	/^res = []$/;"	v	language:Python
 res	/home/derek/Desktop/cs784/project/pyscripts/heart_trends/heart.py	/^res = []$/;"	v	language:Python
-slc	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^        slc = j.loc[(year, slice(None), code), 'items']$/;"	v	language:Python
-TOPK	/home/derek/Desktop/cs784/project/not_shit/heart_trends/rate_dist.py	/^TOPK = 10$/;"	v	language:Python
 years	/home/derek/Desktop/cs784/project/not_shit/heart_trends/heart_trends.py	/^years = sorted(list(heart_meds.year.unique()))$/;"	v	language:Python

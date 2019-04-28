@@ -1926,6 +1926,7 @@
     <bcf:citekey order="1">ref:SparkSQL</bcf:citekey>
     <bcf:citekey order="2">ref:CEM</bcf:citekey>
     <bcf:citekey order="3">ref:ZaliQL</bcf:citekey>
+    <bcf:citekey order="4">ref:LinReg</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

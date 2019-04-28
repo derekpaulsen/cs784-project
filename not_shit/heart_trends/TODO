@@ -4,3 +4,15 @@ distribution of the prescribing rates for each year
 
 that is the drugs that have no real national trend, are the rates 
 distributed normally (like the most prescribed drugs)?
+
+
+
+Candidate set, prediction list
+
+
+two tables
+orig candidate sets
+reduced cand set
+labeled
+
+extra blocking rules (python script?)

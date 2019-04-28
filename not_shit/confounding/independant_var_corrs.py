@@ -37,8 +37,8 @@ indep_vars = [
     'income',
     'density',
     'latitude',
-    'pop_above_65',
-    'pop_above_45'
+    'over_65',
+    'over_45'
 ]   
 
     
@@ -75,8 +75,8 @@ joined = lat_long.join(imd, how='inner')\
                 .join(mor, how='inner')
 
 
-joined['pop_above_65'] = joined['65+'] / joined['total']
-joined['pop_above_45'] = (joined['65+'] + joined['45-64']) / joined['total']
+joined['over_65'] = joined['65+'] / joined['total']
+joined['over_45'] = (joined['65+'] + joined['45-64']) / joined['total']
 joined['heart_related'] = joined[heart_rel].apply(lambda x : x.sum(), axis=1) / joined.total
 
 joined = joined.reset_index()
@@ -105,7 +105,14 @@ with open('res.tex', 'w') as ofs:
         ofs.write('\t\hline\n')
         ofs.write('\t'+x.replace('_', '\\_'))
         for y in indep_vars:
-            ofs.write(f'& %.3f' % res[(x,y)][2])
+            corr, pval = res[(x,y)][0:2]
+            if abs(corr) >= .6 and corr != 1:
+                ofs.write('& \\textbf{%.3f}' % corr)
+            else:
+                ofs.write('& %.3f' % corr)
+            if pval > .001:
+                ofs.write('*')
+
         ofs.write('\\\\ \n')
             
 

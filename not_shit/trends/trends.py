@@ -6,6 +6,30 @@ pres = pd.read_csv('../../data/slices/heart/summed_heart.csv')
 pop = pd.read_csv('../../data/outer_code_norm/population_by_outer_code.csv').groupby('year').sum()
 mor = pd.read_csv('../../data/outer_code_norm/mortality_by_outer_code.csv').groupby('year').sum()
 
+tots = pres.groupby(['year', 'month']).sum()\
+            .join(pop)\
+            .reset_index()
+
+
+tots['x'] = tots['year'] + (tots['month'] - 1) / 12
+tots = tots.loc[(tots.x >= 2011) & (tots.x <= 2017)]
+
+tots_fig, tots_ax = plt.subplots()
+
+tots_ax.set_title('All Drugs')
+tots_ax.set_ylabel('Items Per Person')
+tots_ax.set_xlabel('Year')
+tots_ax.set_xticks(list(range(2011, 2018)))
+
+tots_ax.plot(tots.x.values, tots['items'].values)
+
+tots_fig.savefig('../figures/all_drugs_basic.pdf')
+
+
+
+
+
+
 
 mor = mor.join(pop)
 
@@ -67,9 +91,27 @@ heart = pres.loc[pres.bnf_code.apply(lambda  x : str(x).startswith('02'))]\
                 .join(pop)\
                 .reset_index()
 
-
 heart['items'] /= heart.total
 heart['x'] = heart['year'] + (heart['month'] - 1) / 12
+
+basic_heart_fig, basic_heart_ax = plt.subplots()
+
+basic_heart_ax.set_title('Heart Medication')
+basic_heart_ax.set_xlabel('Year')
+basic_heart_ax.set_ylabel('Items Per Person')
+basic_heart_ax.set_xticks(list(range(2011,2018)))
+
+basic_heart_ax.plot(heart.x.values, heart['items'].values)
+
+basic_heart_fig.tight_layout()
+
+basic_heart_fig.savefig('../figures/basic_heart_trend.pdf')
+
+
+
+
+
+
 
 heart = heart.loc[(heart.year >= 2013) & (heart.x <= 2016)]
 
@@ -102,8 +144,8 @@ hax.set_xlabel('Year')
 dfig.tight_layout()
 hfig.tight_layout()
 
-dfig.savefig('../figures/dementia_death_vs_drugs.png')
-hfig.savefig('../figures/heart_death_vs_drugs.png')
+dfig.savefig('../figures/dementia_death_vs_drugs.pdf')
+hfig.savefig('../figures/heart_death_vs_drugs.pdf')
 
 plt.show()
 

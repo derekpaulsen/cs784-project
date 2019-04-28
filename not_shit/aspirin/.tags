@@ -1,0 +1,10 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+aspirin_codes	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^aspirin_codes = pd.read_csv('..\/..\/data\/BNF_codes\/anti_platlet_asp.csv')['BNF Presentation Code']$/;"	v	language:Python
+aspirin_codes	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^aspirin_codes = set(aspirin_codes)$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^df  = pd.read_csv('..\/..\/data\/slices\/heart\/heart_outer_code.csv')$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^df = df.groupby(['outer_code', 'year', 'month']).sum()$/;"	v	language:Python
+df	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^df = df.loc[df.bnf_code.apply(lambda x : x in aspirin_codes)]$/;"	v	language:Python
+j	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^        j = overall.join(df.loc[(oc, slice(None), slice(None)), :], how='inner', rsuffix='_r', lsuffix='_l')$/;"	v	language:Python
+outer_codes	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^outer_codes = df.outer_code.unique()$/;"	v	language:Python
+overall	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^overall = df.groupby(['year', 'month']).sum()$/;"	v	language:Python
+res	/home/derek/Desktop/cs784/project/not_shit/aspirin/aspirin.py	/^res = []$/;"	v	language:Python
